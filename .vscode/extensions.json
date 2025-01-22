@@ -1,0 +1,17 @@
+{
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"bradlc.vscode-tailwindcss",
+		"iJS.next-js-snippets",
+		"dsznajder.es7-react-js-snippets",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"eamodio.gitlens",
+		"rangav.vscode-thunder-client",
+		"aaron-bond.better-comments",
+		"streetsidesoftware.code-spell-checker",
+		"msjsdiag.debugger-for-chrome",
+		"PKief.material-icon-theme"
+	]
+}
