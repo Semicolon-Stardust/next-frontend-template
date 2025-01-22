@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { cn } from "@/lib/utils";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { Locale, routing } from "@/i18n/routing";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -22,14 +27,28 @@ export const metadata: Metadata = {
 		"This is a Nextjs frontend template with TypeScript and Tailwind CSS for rapid development of web applications and websites with a modern frontend stack and best practices.",
 };
 
-export default async function RootLayout({
+export default async function LocaleLayout({
 	children,
-}: Readonly<{
+	params,
+}: {
 	children: React.ReactNode;
-}>) {
+	params: { locale: string };
+}) {
+	const { locale } = await params;
+	
+	setRequestLocale(locale);
+	
+	if (!routing.locales.includes(locale as Locale)) {
+		notFound();
+	}
+
+
+	const messages = await getMessages();
+
 	return (
-		<html suppressHydrationWarning>
+		<html lang={locale} suppressHydrationWarning>
 			<body
+				suppressHydrationWarning
 				className={cn(
 					geistSans.variable,
 					geistMono.variable,
@@ -42,9 +61,11 @@ export default async function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					<Header />
-					{children}
-					<Footer />
+					<NextIntlClientProvider messages={messages}>
+						<Header />
+						{children}
+						<Footer />
+					</NextIntlClientProvider>
 				</ThemeProvider>
 			</body>
 		</html>
