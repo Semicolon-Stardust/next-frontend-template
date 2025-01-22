@@ -2,10 +2,11 @@
 
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ModeToggle } from "@/components/utils/mode-toggle";
 
 const menuVariants = {
     open: {
@@ -48,10 +49,32 @@ const buttonsData: { text: string; variant: "default" | "secondary" | "link" | "
 ];
 
 export default function Header() {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <header className={cn("fixed top-0 left-0 w-full z-50 select-none")}>
+        <motion.header
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.5 }}
+            className={cn("fixed top-0 left-0 w-full z-50 select-none", scrolled ? "backdrop-blur-md border-b border-gray-200 dark:border-gray-700 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:shadow-[0_35px_60px_-15px_rgba(255,255,255,0.3)] transition-shadow duration-500" : "transition-shadow duration-500")}
+        >
             <Navbar />
-        </header>
+        </motion.header>
     );
 }
 
@@ -63,9 +86,7 @@ function Navbar() {
             initial={false}
             animate={isOpen ? "open" : "closed"}
             className={cn(
-                "flex flex-col md:flex-row justify-between items-center px-5 md:px-20 lg:px-40 py-5",
-                "backdrop-blur-md bg-white/30",
-                "border-b border-gray-200 shadow-md"
+                "flex flex-col md:flex-row justify-between items-center px-5 md:px-20 lg:px-40 py-5"
             )}
         >
             <motion.div
@@ -75,7 +96,7 @@ function Navbar() {
                 className="flex justify-between w-full md:w-auto"
             >
                 <Link href="/">
-                    <h1 className={cn("text-4xl font-bold text-black")}>
+                    <h1 className={cn("text-4xl font-bold text-black dark:text-white")}>
                         Logo
                     </h1>
                 </Link>
@@ -83,7 +104,7 @@ function Navbar() {
                     <Button
                         variant={"link"}
                         effect={"shine"}
-                        className="text-lg font-[300] bg-black text-white"
+                        className="text-lg font-[300] bg-black text-white dark:bg-white dark:text-black"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         {isOpen ? <X size={30} /> : <Menu size={30} />}
@@ -98,6 +119,7 @@ function Navbar() {
             >
                 <Links links={linksData} />
                 <CTAButtons buttons={buttonsData} />
+                <ModeToggle />
             </motion.div>
             <motion.div
                 initial={false}
@@ -135,7 +157,7 @@ function Links({ links }: LinkProps) {
                         <Button
                             variant={"link"}
                             effect={"hoverUnderline"}
-                            className="text-lg font-[300]"
+                            className="text-lg font-[300] text-black dark:text-white"
                         >
                             <Link href={link.href}>{link.linkName}</Link>
                         </Button>
@@ -153,7 +175,7 @@ function MobileLinks() {
             animate={"open"}
             exit={"closed"}
             variants={menuVariants}
-            className={cn("flex flex-col items-center gap-5 mt-10")} // Added mt-10 for margin-top
+            className={cn("flex flex-col items-center gap-5 mt-10")}
         >
             <Links links={linksData} />
             <div className={cn("flex gap-5 mt-5")}>
@@ -163,6 +185,7 @@ function MobileLinks() {
                     </Button>
                 ))}
             </div>
+            <ModeToggle />
         </motion.nav>
     );
 }
