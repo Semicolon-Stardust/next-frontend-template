@@ -31,7 +31,7 @@ export default function NotFound() {
     return (
         <motion.div
             className={cn(
-                "flex flex-col items-center justify-center min-h-screen bg-gray-100"
+                "flex flex-col items-center justify-center min-h-screen bg-gray-900/30"
             )}
             variants={containerVariants}
             initial="hidden"
@@ -48,17 +48,18 @@ export default function NotFound() {
                     <path
                         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"
                         fill="#000000"
+                        className="dark:fill-white"
                     />
                 </svg>
             </motion.div>
             <motion.h1
-                className={cn("text-6xl font-bold text-black mb-4")}
+                className={cn("text-6xl font-bold text-black dark:text-white mb-4")}
                 variants={itemVariants}
             >
                 404 - Page Not Found
             </motion.h1>
             <motion.p
-                className={cn("text-lg text-gray-700 mb-8")}
+                className={cn("text-lg text-gray-700 dark:text-gray-300 mb-8")}
                 variants={itemVariants}
             >
                 Sorry, the page you are looking for does not exist.
