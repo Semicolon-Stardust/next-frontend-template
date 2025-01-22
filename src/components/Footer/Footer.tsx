@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import {Link} from '@/i18n/routing';
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Instagram from "@/Assets/instagram-logo.svg";
@@ -8,9 +8,13 @@ import Github from "@/Assets/github-logo.svg";
 import Discord from "@/Assets/discord-logo.svg";
 import X from "@/Assets/x-logo.svg";
 import Notion from "@/Assets/notion-logo.svg";
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
+
 
 export default function Footer() {
+	
+
+	
 	const t = useTranslations("Footer");
 
 	const footerData = {
@@ -25,8 +29,14 @@ export default function Footer() {
 			{
 				title: t("sections.company.title"),
 				links: [
-					{ name: t("sections.company.links.aboutUs"), href: "/about" },
-					{ name: t("sections.company.links.careers"), href: "/careers" },
+					{
+						name: t("sections.company.links.aboutUs"),
+						href: "/about",
+					},
+					{
+						name: t("sections.company.links.careers"),
+						href: "/careers",
+					},
 					{ name: t("sections.company.links.press"), href: "/press" },
 				],
 			},
@@ -34,16 +44,31 @@ export default function Footer() {
 				title: t("sections.resources.title"),
 				links: [
 					{ name: t("sections.resources.links.blog"), href: "/blog" },
-					{ name: t("sections.resources.links.helpCenter"), href: "/help" },
-					{ name: t("sections.resources.links.contactSupport"), href: "/support" },
+					{
+						name: t("sections.resources.links.helpCenter"),
+						href: "/help",
+					},
+					{
+						name: t("sections.resources.links.contactSupport"),
+						href: "/support",
+					},
 				],
 			},
 			{
 				title: t("sections.legal.title"),
 				links: [
-					{ name: t("sections.legal.links.privacyPolicy"), href: "/privacy" },
-					{ name: t("sections.legal.links.termsOfService"), href: "/terms" },
-					{ name: t("sections.legal.links.cookiePolicy"), href: "/cookies" },
+					{
+						name: t("sections.legal.links.privacyPolicy"),
+						href: "/privacy",
+					},
+					{
+						name: t("sections.legal.links.termsOfService"),
+						href: "/terms",
+					},
+					{
+						name: t("sections.legal.links.cookiePolicy"),
+						href: "/cookies",
+					},
 				],
 			},
 		],

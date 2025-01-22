@@ -34,13 +34,14 @@ export default async function LocaleLayout({
 	children: React.ReactNode;
 	params: { locale: string };
 }) {
-	// Ensure that the incoming `locale` is valid
-	const {locale} = await params;
+	const { locale } = await params;
+	
+	setRequestLocale(locale);
+	
 	if (!routing.locales.includes(locale as Locale)) {
 		notFound();
 	}
 
-	setRequestLocale(locale);
 
 	const messages = await getMessages();
 

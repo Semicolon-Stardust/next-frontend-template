@@ -1,14 +1,8 @@
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
 import { cn } from "@/lib/utils";
+import { Link } from "@/i18n/routing";
 
-export default function HomePage({
-	params: { locale },
-}: {
-	params: { locale: string };
-}) {
-	setRequestLocale(locale);
-
+export default function HomePage() {
 	const t = useTranslations("HomePage");
 	return (
 		<div
@@ -20,6 +14,7 @@ export default function HomePage({
 		>
 			<div>
 				<h1>{t("title")}</h1>
+				<Link href="/about">{t("about")}</Link>
 			</div>
 		</div>
 	);
