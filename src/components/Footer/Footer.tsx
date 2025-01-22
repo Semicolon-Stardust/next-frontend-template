@@ -2,105 +2,107 @@ import React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-// import { Instagram, Linkedin, Github } from "lucide-react";
 import Instagram from "@/Assets/instagram-logo.svg";
 import Linkedin from "@/Assets/linkedin-logo.svg";
 import Github from "@/Assets/github-logo.svg";
 import Discord from "@/Assets/discord-logo.svg";
 import X from "@/Assets/x-logo.svg";
 import Notion from "@/Assets/notion-logo.svg";
-
-const footerData = {
-	logo: {
-		name: "Nextjs Frontend Template",
-		href: "/",
-	},
-	p: {
-		text: "This is a Nextjs frontend template with TypeScript and Tailwind CSS for rapid development of web applications and websites with a modern frontend stack and best practices.",
-	},
-	sections: [
-		{
-			title: "Company",
-			links: [
-				{ name: "About Us", href: "/about" },
-				{ name: "Careers", href: "/careers" },
-				{ name: "Press", href: "/press" },
-			],
-		},
-		{
-			title: "Resources",
-			links: [
-				{ name: "Blog", href: "/blog" },
-				{ name: "Help Center", href: "/help" },
-				{ name: "Contact Support", href: "/support" },
-			],
-		},
-		{
-			title: "Legal",
-			links: [
-				{ name: "Privacy Policy", href: "/privacy" },
-				{ name: "Terms of Service", href: "/terms" },
-				{ name: "Cookie Policy", href: "/cookies" },
-			],
-		},
-	],
-	socials: [
-		{
-			icons: Github,
-			name: "GitHub",
-			href: "",
-			color: "bg-black dark:bg-white",
-			textColor: "text-white dark:text-black",
-		},
-		{
-			icons: Linkedin,
-			name: "LinkedIn",
-			href: "",
-			color: "bg-blue-600 dark:bg-blue-300",
-			textColor: "text-white dark:text-black",
-		},
-		{
-			icons: Instagram,
-			name: "Instagram",
-			href: "",
-			color: "bg-pink-500 dark:bg-pink-300",
-			textColor: "text-white dark:text-black",
-		},
-		{
-			icons: Discord,
-			name: "Discord",
-			href: "",
-			color: "bg-[#5865F2] dark:bg-[#7289da]",
-			textColor: "text-white dark:text-black",
-		},
-		{
-			icons: X,
-			name: "X",
-			href: "",
-			color: "bg-black dark:bg-white",
-			textColor: "text-white dark:text-black",
-		},
-		{
-			icons: Notion,
-			name: "Notion",
-			href: "",
-			color: "bg-black dark:bg-white",
-			textColor: "text-white dark:text-black",
-		},
-	],
-	madeBy: [
-		{
-			name: "Aryan Gulati",
-			href: "",
-		},
-		{
-			name: "Neelanjan Mukherji",
-			href: "",
-		},
-	],
-};
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+	const t = useTranslations("Footer");
+
+	const footerData = {
+		logo: {
+			name: t("logo"),
+			href: "/",
+		},
+		p: {
+			text: t("description"),
+		},
+		sections: [
+			{
+				title: t("sections.company.title"),
+				links: [
+					{ name: t("sections.company.links.aboutUs"), href: "/about" },
+					{ name: t("sections.company.links.careers"), href: "/careers" },
+					{ name: t("sections.company.links.press"), href: "/press" },
+				],
+			},
+			{
+				title: t("sections.resources.title"),
+				links: [
+					{ name: t("sections.resources.links.blog"), href: "/blog" },
+					{ name: t("sections.resources.links.helpCenter"), href: "/help" },
+					{ name: t("sections.resources.links.contactSupport"), href: "/support" },
+				],
+			},
+			{
+				title: t("sections.legal.title"),
+				links: [
+					{ name: t("sections.legal.links.privacyPolicy"), href: "/privacy" },
+					{ name: t("sections.legal.links.termsOfService"), href: "/terms" },
+					{ name: t("sections.legal.links.cookiePolicy"), href: "/cookies" },
+				],
+			},
+		],
+		socials: [
+			{
+				icons: Github,
+				name: t("socials.github"),
+				href: "",
+				color: "bg-black dark:bg-white",
+				textColor: "text-white dark:text-black",
+			},
+			{
+				icons: Linkedin,
+				name: t("socials.linkedin"),
+				href: "",
+				color: "bg-blue-600 dark:bg-blue-300",
+				textColor: "text-white dark:text-black",
+			},
+			{
+				icons: Instagram,
+				name: t("socials.instagram"),
+				href: "",
+				color: "bg-pink-500 dark:bg-pink-300",
+				textColor: "text-white dark:text-black",
+			},
+			{
+				icons: Discord,
+				name: t("socials.discord"),
+				href: "",
+				color: "bg-[#5865F2] dark:bg-[#7289da]",
+				textColor: "text-white dark:text-black",
+			},
+			{
+				icons: X,
+				name: t("socials.x"),
+				href: "",
+				color: "bg-black dark:bg-white",
+				textColor: "text-white dark:text-black",
+			},
+			{
+				icons: Notion,
+				name: t("socials.notion"),
+				href: "",
+				color: "bg-black dark:bg-white",
+				textColor: "text-white dark:text-black",
+			},
+		],
+		madeBy: [
+			{
+				name: t("madeBy.aryanGulati"),
+				href: "",
+			},
+			{
+				name: t("madeBy.neelanjanMukherji"),
+				href: "",
+			},
+		],
+	};
+
 	return (
 		<footer
 			className={cn(
@@ -162,7 +164,7 @@ export default function Footer() {
 						"text-xl font-bold text-black dark:text-white font-mono"
 					)}
 				>
-					Socials
+					{t("socials.title")}
 				</h2>
 				<div
 					className={cn("bg-black dark:bg-white", "h-0.5", "w-10")}
@@ -173,7 +175,10 @@ export default function Footer() {
 					)}
 				>
 					{footerData.socials.map((social, index) => (
-						<li key={index} className="flex flex-row items-center col-span-1 gap-3 md:flex-col">
+						<li
+							key={index}
+							className="flex flex-row items-center col-span-1 gap-3 md:flex-col"
+						>
 							<Link
 								href={social.href}
 								className={cn("block")}
@@ -191,7 +196,9 @@ export default function Footer() {
 									<social.icons className="w-6 h-6 md:h-8 md:w-8" />
 								</Button>
 							</Link>
-							<span className="flex text-sm md:hidden">{social.name}</span>
+							<span className="flex text-sm md:hidden">
+								{social.name}
+							</span>
 						</li>
 					))}
 				</ul>
@@ -203,14 +210,14 @@ export default function Footer() {
 					)}
 				>
 					&copy; {new Date().getFullYear()} {footerData.logo.name}.
-					All rights reserved.
+					{t("allRightsReserved")}
 				</p>
 				<p
 					className={cn(
 						"text-center md:text-right text-gray-500 dark:text-gray-400"
 					)}
 				>
-					Designed and developed by{" "}
+					{t("designedAndDevelopedBy")}{" "}
 					{footerData.madeBy.map((madeBy, index) => (
 						<React.Fragment key={index}>
 							<Button variant="link" effect="hoverUnderline">

@@ -1,0 +1,67 @@
+{
+  "Header": {
+    "logo": "Логотип",
+    "links": {
+      "home": "Главная",
+      "about": "О нас",
+      "services": "Услуги",
+      "contact": "Контакты"
+    },
+    "ctaButtons": {
+      "signUp": "Регистрация",
+      "logIn": "Войти"
+    }
+  },
+  "HomePage": {
+    "title": "До свидания, мир!"
+  },
+  "AboutPage": {
+    "title": "О нас",
+    "home": "Перейти на главную страницу"
+  },
+  "Footer": {
+    "logo": "Шаблон фронтенда Nextjs",
+    "description": "Это шаблон фронтенда Nextjs с TypeScript и Tailwind CSS для быстрого создания веб-приложений и сайтов с современной фронтенд-стеком и лучшими практиками.",
+    "sections": {
+      "company": {
+        "title": "Компания",
+        "links": {
+          "aboutUs": "О нас",
+          "careers": "Карьера",
+          "press": "Пресса"
+        }
+      },
+      "resources": {
+        "title": "Ресурсы",
+        "links": {
+          "blog": "Блог",
+          "helpCenter": "Центр помощи",
+          "contactSupport": "Поддержка"
+        }
+      },
+      "legal": {
+        "title": "Правовая информация",
+        "links": {
+          "privacyPolicy": "Политика конфиденциальности",
+          "termsOfService": "Условия использования",
+          "cookiePolicy": "Политика использования файлов cookie"
+        }
+      }
+    },
+    "socials": {
+      "title": "Подписывайтесь на нас",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "discord": "Discord",
+      "x": "X",
+      "notion": "Notion"
+    },
+    "allRightsReserved": "Все права защищены.",
+    "designedAndDevelopedBy": "Разработано и создано",
+    "madeBy": {
+      "aryanGulati": "Арьян Гулати",
+      "neelanjanMukherji": "Ниланжан Мукерджи"
+    }
+  }
+}
