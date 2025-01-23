@@ -3,11 +3,12 @@
 import { cn } from '@/lib/utils';
 import { Link } from '@/i18n/routing';
 import { useState, useEffect } from 'react';
-import { Button } from '../ui/button';
+import { Button } from '../button';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ModeToggle } from '@/components/utils/mode-toggle';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 const menuVariants = {
 	open: {
@@ -112,24 +113,33 @@ function Navbar() {
 			initial={false}
 			animate={isOpen ? 'open' : 'closed'}
 			className={cn(
-				'flex flex-col md:flex-row justify-between items-center px-5 md:px-20 lg:px-40 py-5'
+				'flex flex-col md:flex-row justify-between items-center px-5 md:px-20 lg:px-40 py-1'
 			)}
 		>
 			<motion.div
 				initial="hidden"
 				animate="visible"
 				variants={itemVariants}
-				className="flex justify-between w-full md:w-auto"
+				className="flex justify-between items-center w-full md:w-auto"
 			>
-				<Link href="/">
+				<Link href="/" className="flex items-center gap-1">
+					{/* Daya Logo */}
+					<Image
+						src="/daya-logo.svg"
+						alt="Daya Logo"
+						width={70}
+						height={70}
+						priority
+					/>
 					<h1
 						className={cn(
-							'text-4xl font-bold text-black dark:text-white'
+							'text-2xl lg:text-3xl font-bold text-black dark:text-white'
 						)}
 					>
 						{t('logo')}
 					</h1>
 				</Link>
+				{/* Hamburger Button for Mobile */}
 				<div className="md:hidden">
 					<Button
 						variant={'link'}
@@ -141,6 +151,7 @@ function Navbar() {
 					</Button>
 				</div>
 			</motion.div>
+
 			<motion.div
 				initial="hidden"
 				animate="visible"

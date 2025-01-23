@@ -8,8 +8,8 @@ import { notFound } from 'next/navigation';
 import { Locale, routing } from '@/i18n/routing';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
-import Header from '@/components/header/header';
-import Footer from '@/components/footer/footer';
+import Header from '@/components/ui/header/header';
+import Footer from '@/components/ui/footer/footer';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
