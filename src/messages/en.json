@@ -20,7 +20,29 @@
 		}
 	},
 	"HomePage": {
-		"title": "Bye, world!"
+		"title": "Bye, world!",
+		"heroSection": {
+			"carousel": {
+				"1": {
+					"image": "/images/slide1.jpg",
+					"altText": "Slide 1",
+					"heading": "Welcome to Our Platform",
+					"paragraph": "This is a sample description for Slide 1."
+				},
+				"2": {
+					"image": "/images/slide2.jpg",
+					"altText": "Slide 2",
+					"heading": "Discover More Features",
+					"paragraph": "This is a sample description for Slide 2."
+				},
+				"3": {
+					"image": "/images/slide3.jpg",
+					"altText": "Slide 3",
+					"heading": "Join Us Today",
+					"paragraph": "This is a sample description for Slide 3."
+				}
+			}
+		}
 	},
 	"AboutPage": {
 		"title": "About us",

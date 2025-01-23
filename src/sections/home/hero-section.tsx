@@ -1,7 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import Autoplay from 'embla-carousel-autoplay';
 
 import {
@@ -15,7 +16,8 @@ import { CarouselDots } from '@/components/ui/carousel-dots';
 import { type CarouselApi } from '@/components/ui/carousel';
 
 export default function HeroCarousel() {
-	const carouselData = en.homepage['hero-section'].carousel;
+	const t = useTranslations('HomePage');
+	const carouselData = Object.values(t('heroSection.carousel'));
 	const [api, setApi] = useState<CarouselApi>();
 
 	return (
@@ -26,9 +28,9 @@ export default function HeroCarousel() {
 				setApi={setApi}
 			>
 				<CarouselContent className="h-full">
-					{carouselData.map((item) => (
+					{carouselData.map((item, index) => (
 						<CarouselItem
-							key={item.id}
+							key={index}
 							className="relative h-full min-h-[90vh] w-full"
 						>
 							<Image
