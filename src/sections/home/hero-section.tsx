@@ -16,12 +16,18 @@ import { CarouselDots } from '@/components/ui/carousel-dots';
 import { type CarouselApi } from '@/components/ui/carousel';
 
 export default function HeroCarousel() {
-	const t = useTranslations('HomePage');
-	const carouselData = Object.values(t('heroSection.carousel'));
+	const t = useTranslations('HomePage.heroSection.carousel');
+	const slideKeys = ['1', '2', '3'];
+	const carouselData = slideKeys.map((key) => ({
+		image: t(`${key}.image`),
+		altText: t(`${key}.altText`),
+		heading: t(`${key}.heading`),
+		paragraph: t(`${key}.paragraph`),
+	}));
 	const [api, setApi] = useState<CarouselApi>();
 
 	return (
-		<section className="relative w-full" style={{ height: '90vh' }}>
+		<section className="relative w-full" style={{ height: '100vh' }}>
 			<Carousel
 				className="h-full w-full"
 				plugins={[Autoplay({ delay: 2000 })]}
@@ -36,7 +42,8 @@ export default function HeroCarousel() {
 							<Image
 								src={item.image}
 								alt={item.altText}
-								fill
+								width={1920}
+								height={1080}
 								className="object-cover"
 								priority
 								loading="eager"

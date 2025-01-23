@@ -2,13 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export default function HeroFormImageAndForm() {
   return (
-    <>
+    <div className={cn("")}>
       {/* Hero */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden flex flex-col min-h-screen">
         <div className="container py-24 lg:py-32">
           <div className="md:pe-8 md:w-1/2 xl:pe-0 xl:w-5/12">
             {/* Title */}
@@ -91,6 +92,6 @@ export default function HeroFormImageAndForm() {
         {/* End Col */}
       </div>
       {/* End Hero */}
-    </>
+    </div>
   );
 }
