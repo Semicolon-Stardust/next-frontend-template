@@ -62,10 +62,10 @@ export default function Header() {
 			animate={{ y: 0 }}
 			transition={{ duration: 0.5 }}
 			className={cn(
-				'fixed top-0 left-0 w-full z-50 select-none',
+				'fixed top-0 left-0 w-full z-50 select-none bg-white dark:bg-black',
 				scrolled
 					? 'backdrop-blur-md border-b border-gray-200 dark:border-gray-700 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:shadow-[0_35px_60px_-15px_rgba(255,255,255,0.3)] transition-shadow duration-500'
-					: 'transition-shadow duration-500',
+					: 'transition-shadow duration-500'
 			)}
 		>
 			<Navbar />

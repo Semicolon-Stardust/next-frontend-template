@@ -9,13 +9,11 @@ import {
 	Carousel,
 	CarouselContent,
 	CarouselItem,
-	CarouselPrevious,
-	CarouselNext,
 } from '@/components/ui/carousel';
 import { CarouselDots } from '@/components/ui/carousel-dots';
 import { type CarouselApi } from '@/components/ui/carousel';
 
-export default function HeroCarousel() {
+export default function Hero() {
 	const t = useTranslations('HomePage.heroSection.carousel');
 	const slideKeys = ['1', '2', '3'];
 	const carouselData = slideKeys.map((key) => ({
@@ -27,8 +25,9 @@ export default function HeroCarousel() {
 	const [api, setApi] = useState<CarouselApi>();
 
 	return (
-		<section className="relative w-full" style={{ height: '100vh' }}>
+		<section className="relative w-full h-screen">
 			<Carousel
+				opts={{ align: 'start', loop: true }}
 				className="h-full w-full"
 				plugins={[Autoplay({ delay: 2000 })]}
 				setApi={setApi}
@@ -37,31 +36,29 @@ export default function HeroCarousel() {
 					{carouselData.map((item, index) => (
 						<CarouselItem
 							key={index}
-							className="relative h-full min-h-[90vh] w-full"
+							className="relative min-h-screen w-full"
 						>
 							<Image
 								src={item.image}
 								alt={item.altText}
-								width={1920}
-								height={1080}
-								className="object-cover"
+								fill
+								style={{ objectFit: 'cover' }}
 								priority
 								loading="eager"
 							/>
-							<div className="absolute inset-0 bg-black opacity-50"></div>
-							<div className="absolute inset-0 flex flex-col items-center justify-center px-5 text-gray-300 md:ml-12 md:items-start">
-								<h1 className="mb-2 text-center text-3xl font-bold tracking-wide md:text-left md:text-5xl">
+							<div className="absolute inset-0 bg-black bg-opacity-30"></div>
+							<div className="absolute inset-0 flex flex-col items-center justify-center px-5 text-white md:ml-12 md:items-start h-full w-full">
+								<h1 className="mb-2 text-center text-4xl font-extrabold tracking-tight md:text-left md:text-6xl">
 									{item.heading}
 								</h1>
-								<p className="text-md mb-4 pt-5 text-center font-light tracking-wide md:text-left md:text-xl">
+								<p className="text-md mb-4 pt-5 text-center font-medium tracking-wide md:text-left md:text-2xl">
 									{item.paragraph}
 								</p>
 							</div>
 						</CarouselItem>
 					))}
 				</CarouselContent>
-				<CarouselPrevious className="absolute left-4 top-1/2 z-10 -translate-y-1/2 opacity-50" />
-				<CarouselNext className="absolute right-4 top-1/2 z-10 -translate-y-1/2 opacity-50" />
+
 				<CarouselDots numberOfSlides={carouselData.length} api={api} />
 			</Carousel>
 		</section>
