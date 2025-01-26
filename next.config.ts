@@ -5,7 +5,7 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
 	images: {
-		domains: ['images.unsplash.com'],
+		domains: ['images.unsplash.com', 'plus.unsplash.com'],
 	},
 	webpack(config) {
 		// Grab the existing rule that handles SVG imports

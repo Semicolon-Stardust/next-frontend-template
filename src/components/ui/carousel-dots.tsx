@@ -4,6 +4,8 @@ import * as React from 'react';
 import { type CarouselApi } from '@/components/ui/carousel';
 import { cn } from '@/lib/utils';
 
+import { CarouselPrevious, CarouselNext } from '@/components/ui/carousel';
+
 interface CarouselDotsProps {
 	numberOfSlides: number;
 	api?: CarouselApi; // Pass the carousel API as a prop
@@ -48,6 +50,8 @@ export function CarouselDots({ numberOfSlides, api }: CarouselDotsProps) {
 					aria-label={`Go to slide ${index + 1}`}
 				/>
 			))}
+			<CarouselPrevious />
+			<CarouselNext />
 		</div>
 	);
 }
