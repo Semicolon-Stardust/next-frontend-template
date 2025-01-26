@@ -46,7 +46,8 @@ export default function Hero() {
 								priority
 								loading="eager"
 							/>
-							<div className="absolute inset-0 bg-black bg-opacity-30"></div>
+							{/* TODO Fix overlay opacity */}
+							<div className="absolute inset-0 min-h-screen w-full bg-black bg-opacity-10"></div>
 							<div className="absolute inset-0 flex flex-col items-center justify-center px-5 text-white md:ml-12 md:items-start h-full w-full">
 								<h1 className="mb-2 text-center text-4xl font-extrabold tracking-tight md:text-left md:text-6xl">
 									{item.heading}
@@ -58,7 +59,6 @@ export default function Hero() {
 						</CarouselItem>
 					))}
 				</CarouselContent>
-
 				<CarouselDots numberOfSlides={carouselData.length} api={api} />
 			</Carousel>
 		</section>

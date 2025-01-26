@@ -1,7 +1,5 @@
 import { cn } from '@/lib/utils';
 import Hero from '@/sections/home/hero-section';
-import Test from '@/sections/home/test';
-// import Test from '@/sections/home/test';
 
 export default function HomePage() {
 	return (
@@ -13,7 +11,6 @@ export default function HomePage() {
 			)}
 		>
 			<Hero />
-			<Test />
 		</main>
 	);
 }
