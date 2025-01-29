@@ -54,14 +54,14 @@ const LoginForm = () => {
 	return (
 		<div
 			className={cn(
-				'flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900'
+				'flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-950'
 			)}
 		>
 			<motion.div
 				initial={{ opacity: 0, scale: 0.9 }}
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.5 }}
-				className="w-full max-w-2xl p-10 mx-auto bg-white shadow-2xl dark:bg-gray-800 rounded-2xl h-[600px]"
+				className="w-full max-w-2xl p-10 mx-auto bg-white shadow-2xl dark:bg-black rounded-2xl h-[600px] drop-shadow-[0_15px_35px_rgba(0,0,0,0.25)] dark:drop-shadow-[0_15px_35px_rgba(255,255,255,0.25)]"
 			>
 				<Tabs
 					value={activeTab}

@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import AlternateHero from '@/sections/home/alt-hero-section';
 import Hero from '@/sections/home/hero-section';
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
 			)}
 		>
 			<Hero />
+			<AlternateHero />
 		</main>
 	);
 }
