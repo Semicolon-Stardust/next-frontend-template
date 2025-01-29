@@ -9,6 +9,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ModeToggle } from '@/components/utils/mode-toggle';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import LoginModal from '@/components/ui/login/login-modal';
+import SignUpModal from '@/components/ui/sign-up/sign-up-modal';
 
 const menuVariants = {
 	open: {
@@ -85,32 +87,6 @@ function Navbar() {
 		{ linkName: t('links.contact'), href: '/contact' },
 	];
 
-	const buttonsData: {
-		text: string;
-		link: string;
-		variant:
-			| 'default'
-			| 'secondary'
-			| 'link'
-			| 'outline'
-			| 'destructive'
-			| 'ghost';
-		className: string;
-	}[] = [
-		{
-			text: t('ctaButtons.sign-up.text'),
-			link: '/sign-up',
-			variant: 'default',
-			className: 'px-5 py-2',
-		},
-		{
-			text: t('ctaButtons.login.text'),
-			link: '/login',
-			variant: 'secondary',
-			className: 'px-5 py-2',
-		},
-	];
-
 	return (
 		<motion.div
 			initial={false}
@@ -171,7 +147,7 @@ function Navbar() {
 				className="items-center hidden gap-5 md:flex"
 			>
 				<Links links={linksData} />
-				<CTAButtons buttons={buttonsData} />
+				<CTAButtons />
 				<ModeToggle />
 			</motion.div>
 			<motion.div
@@ -181,9 +157,7 @@ function Navbar() {
 				className={cn('w-full flex flex-col md:hidden')}
 			>
 				<AnimatePresence>
-					{isOpen && (
-						<MobileLinks links={linksData} buttons={buttonsData} />
-					)}
+					{isOpen && <MobileLinks links={linksData} />}
 				</AnimatePresence>
 			</motion.div>
 		</motion.div>
@@ -236,21 +210,9 @@ interface MobileLinksProps {
 		linkName: string;
 		href: string;
 	}[];
-	buttons: {
-		text: string;
-		link: string;
-		variant:
-			| 'default'
-			| 'secondary'
-			| 'link'
-			| 'outline'
-			| 'destructive'
-			| 'ghost';
-		className: string;
-	}[];
 }
 
-function MobileLinks({ links, buttons }: MobileLinksProps) {
+function MobileLinks({ links }: MobileLinksProps) {
 	return (
 		<motion.nav
 			initial={false}
@@ -260,68 +222,17 @@ function MobileLinks({ links, buttons }: MobileLinksProps) {
 			className={cn('flex flex-col items-center gap-5 mt-10')}
 		>
 			<Links links={links} />
-			<div className={cn('flex gap-5 mt-5')}>
-				{buttons.map((button, index) => (
-					<Link href={button.link} key={index}>
-						<Button
-							key={index}
-							variant={button.variant}
-							className={button.className}
-						>
-							{button.text}
-						</Button>
-					</Link>
-				))}
-			</div>
+			<CTAButtons />
 			<ModeToggle />
 		</motion.nav>
 	);
 }
 
-interface ButtonProps {
-	buttons: {
-		text: string;
-		link: string;
-		variant:
-			| 'default'
-			| 'secondary'
-			| 'link'
-			| 'outline'
-			| 'destructive'
-			| 'ghost';
-		className: string;
-	}[];
-}
-
-function CTAButtons({ buttons }: ButtonProps) {
+function CTAButtons() {
 	return (
 		<div className={cn('flex gap-5')}>
-			{buttons.map((button, index) => (
-				<motion.div
-					key={index}
-					initial="hidden"
-					animate="visible"
-					variants={{
-						...itemVariants,
-						visible: {
-							...itemVariants.visible,
-							transition: {
-								...itemVariants.visible.transition,
-								delay: 0.4,
-							},
-						},
-					}}
-				>
-					<Link href={button.link}>
-						<Button
-							variant={button.variant}
-							className={button.className}
-						>
-							{button.text}
-						</Button>
-					</Link>
-				</motion.div>
-			))}
+			<LoginModal buttonVariant="secondary" buttonEffect={'gooeyLeft'} />
+			<SignUpModal buttonVariant="outline" buttonEffect={'gooeyRight'} />
 		</div>
 	);
 }
