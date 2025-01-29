@@ -54,23 +54,29 @@
 		"title": "About us",
 		"home": "Go to the home page"
 	},
-	"LoginPage": {
-		"title": "Log In",
+	"Login": {
+		"title": "Login",
+		"description": "Select your login type and enter your credentials.",
+		"userLogin": "User Login",
+		"adminLogin": "Admin Login",
 		"email": "Email",
 		"password": "Password",
+		"username": "Username",
 		"forgotPassword": "Forgot Password?",
-		"rememberMe": "Remember Me",
-		"logInButton": "Log In",
-		"noAccount": "Don't have an account?",
-		"signUp": "Sign Up"
+		"loginAsUser": "Login as User",
+		"loginAsAdmin": "Login as Admin",
+		"newUser": "New User?",
+		"notAdmin": "Not an Admin?"
 	},
-	"SignUpPage": {
+	"SignUp": {
 		"title": "Sign Up",
-		"firstName": "First Name",
-		"lastName": "Last Name",
+		"description": "Enter your details to create an account.",
+		"fullName": "Full Name",
+		"userName": "Username",
 		"email": "Email",
 		"password": "Password",
 		"confirmPassword": "Confirm Password",
+		"isAdmin": "Is Admin?",
 		"signUpButton": "Sign Up",
 		"alreadyHaveAccount": "Already have an account?",
 		"logIn": "Log In"
