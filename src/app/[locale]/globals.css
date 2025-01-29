@@ -67,6 +67,6 @@ body {
 		@apply border-border font-sans;
 	}
 	body {
-		@apply bg-background  text-black dark:text-white;
+		@apply bg-background text-black dark:text-white;
 	}
 }

@@ -87,6 +87,7 @@ function Navbar() {
 
 	const buttonsData: {
 		text: string;
+		link: string;
 		variant:
 			| 'default'
 			| 'secondary'
@@ -97,12 +98,14 @@ function Navbar() {
 		className: string;
 	}[] = [
 		{
-			text: t('ctaButtons.signUp'),
+			text: t('ctaButtons.sign-up.text'),
+			link: '/sign-up',
 			variant: 'default',
 			className: 'px-5 py-2',
 		},
 		{
-			text: t('ctaButtons.logIn'),
+			text: t('ctaButtons.login.text'),
+			link: '/login',
 			variant: 'secondary',
 			className: 'px-5 py-2',
 		},
@@ -120,7 +123,7 @@ function Navbar() {
 				initial="hidden"
 				animate="visible"
 				variants={itemVariants}
-				className="flex justify-between items-center w-full md:w-auto"
+				className="flex items-center justify-between w-full md:w-auto"
 			>
 				<Link href="/" className="flex items-center gap-1">
 					{/* Daya Logo */}
@@ -235,6 +238,7 @@ interface MobileLinksProps {
 	}[];
 	buttons: {
 		text: string;
+		link: string;
 		variant:
 			| 'default'
 			| 'secondary'
@@ -258,13 +262,15 @@ function MobileLinks({ links, buttons }: MobileLinksProps) {
 			<Links links={links} />
 			<div className={cn('flex gap-5 mt-5')}>
 				{buttons.map((button, index) => (
-					<Button
-						key={index}
-						variant={button.variant}
-						className={button.className}
-					>
-						{button.text}
-					</Button>
+					<Link href={button.link} key={index}>
+						<Button
+							key={index}
+							variant={button.variant}
+							className={button.className}
+						>
+							{button.text}
+						</Button>
+					</Link>
 				))}
 			</div>
 			<ModeToggle />
@@ -275,6 +281,7 @@ function MobileLinks({ links, buttons }: MobileLinksProps) {
 interface ButtonProps {
 	buttons: {
 		text: string;
+		link: string;
 		variant:
 			| 'default'
 			| 'secondary'
@@ -305,12 +312,14 @@ function CTAButtons({ buttons }: ButtonProps) {
 						},
 					}}
 				>
-					<Button
-						variant={button.variant}
-						className={button.className}
-					>
-						{button.text}
-					</Button>
+					<Link href={button.link}>
+						<Button
+							variant={button.variant}
+							className={button.className}
+						>
+							{button.text}
+						</Button>
+					</Link>
 				</motion.div>
 			))}
 		</div>

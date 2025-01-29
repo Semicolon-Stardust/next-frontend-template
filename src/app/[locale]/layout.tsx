@@ -54,18 +54,18 @@ export default async function LocaleLayout({
 					'antialiased'
 				)}
 			>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="system"
-					enableSystem
-					disableTransitionOnChange
-				>
-					<NextIntlClientProvider messages={messages}>
+				<NextIntlClientProvider messages={messages}>
+					<ThemeProvider
+						attribute="class"
+						defaultTheme="system"
+						enableSystem
+						disableTransitionOnChange
+					>
 						<Header />
 						{children}
 						<Footer />
-					</NextIntlClientProvider>
-				</ThemeProvider>
+					</ThemeProvider>
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);
