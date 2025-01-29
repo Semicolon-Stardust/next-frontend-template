@@ -11,8 +11,8 @@ import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import LoginModal from '../login/login-modal';
 import { Checkbox } from '@/components/ui/checkbox';
+import LoginModal from '@/components/ui/login/login-modal';
 
 const userSchema = z
 	.object({
@@ -176,10 +176,9 @@ const SignUpForm = () => {
 			<div className={cn('flex items-center justify-end text-sm ')}>
 				<p>{t('alreadyHaveAccount')}</p>
 				<LoginModal
-					className="text-blue-600 dark:text-blue-400"
-					buttonVariant="link"
-					buttonEffect="hoverUnderline"
-				/>
+                    buttonVariant="link"
+                    buttonEffect="hoverUnderline"
+                />
 			</div>
 		</motion.form>
 	);
