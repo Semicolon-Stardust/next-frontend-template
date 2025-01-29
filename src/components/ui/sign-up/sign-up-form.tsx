@@ -55,132 +55,146 @@ const SignUpForm = () => {
 	};
 
 	return (
-		<motion.form
-			onSubmit={userForm.handleSubmit(handleUserSubmit)}
-			className={cn('space-y-6')}
+		<motion.div
+			className={cn('max-h-[80vh] overflow-y-auto p-4')}
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 			transition={{ duration: 0.5 }}
 		>
-			<motion.div
-				className={cn('flex flex-wrap gap-6')}
-				initial={{ opacity: 0, y: -20 }}
-				animate={{ opacity: 1, y: 0 }}
+			<motion.form
+				onSubmit={userForm.handleSubmit(handleUserSubmit)}
+				className={cn('space-y-6')}
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
 				transition={{ duration: 0.5 }}
 			>
-				<div className={cn('flex-1 min-w-[250px]')}>
-					<Label htmlFor="name">{t('fullName')}</Label>
-					<Input
-						id="name"
-						placeholder={t('fullName')}
-						{...userForm.register('name')}
+				<motion.div
+					className={cn('flex flex-wrap gap-6')}
+					initial={{ opacity: 0, y: -20 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5 }}
+				>
+					<div className={cn('flex-1 min-w-[250px]')}>
+						<Label htmlFor="name">{t('fullName')}</Label>
+						<Input
+							id="name"
+							placeholder={t('fullName')}
+							{...userForm.register('name')}
+							className="w-full"
+						/>
+					</div>
+					<div className={cn('flex-1 min-w-[250px]')}>
+						<Label htmlFor="email">{t('email')}</Label>
+						<Input
+							id="email"
+							placeholder={t('email')}
+							{...userForm.register('email')}
+							className="w-full"
+						/>
+					</div>
+				</motion.div>
+				<Separator />
+				<motion.div
+					className={cn('flex flex-wrap gap-6')}
+					initial={{ opacity: 0, y: -20 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5 }}
+				>
+					<div className={cn('flex-1 min-w-[250px]')}>
+						<Label htmlFor="username">{t('userName')}</Label>
+						<Input
+							id="username"
+							placeholder={t('userName')}
+							{...userForm.register('username')}
+							className="w-full"
+						/>
+					</div>
+				</motion.div>
+				<Separator />
+				<motion.div
+					className={cn('flex flex-wrap gap-6')}
+					initial={{ opacity: 0, y: -20 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5 }}
+				>
+					<div className={cn('flex-1 min-w-[250px]')}>
+						<Label htmlFor="password">{t('password')}</Label>
+						<Input
+							id="password"
+							type="password"
+							placeholder={t('password')}
+							{...userForm.register('password')}
+							className="w-full"
+						/>
+					</div>
+					<div className={cn('flex-1 min-w-[250px]')}>
+						<Label htmlFor="confirmPassword">
+							{t('confirmPassword')}
+						</Label>
+						<Input
+							id="confirmPassword"
+							type="password"
+							placeholder={t('confirmPassword')}
+							{...userForm.register('confirmPassword')}
+							className="w-full"
+						/>
+					</div>
+				</motion.div>
+				<Separator />
+				<motion.div
+					className={cn('flex items-center space-x-2')}
+					initial={{ opacity: 0, y: -20 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5 }}
+				>
+					<Checkbox
+						id="isAdmin"
+						checked={showAdminKey}
+						onCheckedChange={(checked) =>
+							setShowAdminKey(checked === true)
+						}
+					/>
+					<Label htmlFor="isAdmin">{t('isAdmin')}</Label>
+				</motion.div>
+				<AnimatePresence>
+					{showAdminKey && (
+						<>
+							<motion.div
+								className={cn('flex flex-wrap gap-6')}
+								initial={{ opacity: 0, y: -20 }}
+								animate={{ opacity: 1, y: 0 }}
+								exit={{ opacity: 0, y: -20 }}
+								transition={{ duration: 0.5 }}
+							>
+								<div className={cn('flex-1 min-w-[250px]')}>
+									<Label htmlFor="adminKey">Admin Key</Label>
+									<Input
+										id="adminKey"
+										type="password"
+										placeholder="Enter Admin Key"
+										{...userForm.register('adminKey')}
+										className="w-full"
+									/>
+								</div>
+							</motion.div>
+							<Separator />
+						</>
+					)}
+				</AnimatePresence>
+				<Button type="submit" className={cn('w-full')}>
+					Sign Up
+				</Button>
+				<div className={cn('flex items-center justify-end text-sm ')}>
+					<p>{t('alreadyHaveAccount')}</p>
+					<LoginModal
+						buttonVariant="link"
+						buttonEffect="hoverUnderline"
 					/>
 				</div>
-				<div className={cn('flex-1 min-w-[250px]')}>
-					<Label htmlFor="email">{t('email')}</Label>
-					<Input
-						id="email"
-						placeholder={t('email')}
-						{...userForm.register('email')}
-					/>
-				</div>
-			</motion.div>
-			<Separator />
-			<motion.div
-				className={cn('flex flex-wrap gap-6')}
-				initial={{ opacity: 0, y: -20 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.5 }}
-			>
-				<div className={cn('flex-1 min-w-[250px]')}>
-					<Label htmlFor="username">{t('userName')}</Label>
-					<Input
-						id="username"
-						placeholder={t('userName')}
-						{...userForm.register('username')}
-					/>
-				</div>
-			</motion.div>
-			<Separator />
-			<motion.div
-				className={cn('flex flex-wrap gap-6')}
-				initial={{ opacity: 0, y: -20 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.5 }}
-			>
-				<div className={cn('flex-1 min-w-[250px]')}>
-					<Label htmlFor="password">{t('password')}</Label>
-					<Input
-						id="password"
-						type="password"
-						placeholder={t('password')}
-						{...userForm.register('password')}
-					/>
-				</div>
-				<div className={cn('flex-1 min-w-[250px]')}>
-					<Label htmlFor="confirmPassword">
-						{t('confirmPassword')}
-					</Label>
-					<Input
-						id="confirmPassword"
-						type="password"
-						placeholder={t('confirmPassword')}
-						{...userForm.register('confirmPassword')}
-					/>
-				</div>
-			</motion.div>
-			<Separator />
-			<motion.div
-				className={cn('flex items-center space-x-2')}
-				initial={{ opacity: 0, y: -20 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.5 }}
-			>
-				<Checkbox
-					id="isAdmin"
-					checked={showAdminKey}
-					onCheckedChange={(checked) =>
-						setShowAdminKey(checked === true)
-					}
-				/>
-				<Label htmlFor="isAdmin">{t('isAdmin')}</Label>
-			</motion.div>
-			<AnimatePresence>
-				{showAdminKey && (
-					<>
-						<motion.div
-							className={cn('flex flex-wrap gap-6')}
-							initial={{ opacity: 0, y: -20 }}
-							animate={{ opacity: 1, y: 0 }}
-							exit={{ opacity: 0, y: -20 }}
-							transition={{ duration: 0.5 }}
-						>
-							<div className={cn('flex-1 min-w-[250px]')}>
-								<Label htmlFor="adminKey">Admin Key</Label>
-								<Input
-									id="adminKey"
-									type="password"
-									placeholder="Enter Admin Key"
-									{...userForm.register('adminKey')}
-								/>
-							</div>
-						</motion.div>
-						<Separator />
-					</>
-				)}
-			</AnimatePresence>
-			<Button type="submit" className={cn('w-full')}>
-				Sign Up
-			</Button>
-			<div className={cn('flex items-center justify-end text-sm ')}>
-				<p>{t('alreadyHaveAccount')}</p>
-				<LoginModal
-                    buttonVariant="link"
-                    buttonEffect="hoverUnderline"
-                />
-			</div>
-		</motion.form>
+			</motion.form>
+		</motion.div>
 	);
 };
 
