@@ -73,7 +73,9 @@ const LoginForm = () => {
 					>
 						<TabsContent value="user">
 							<form
-								onSubmit={userForm.handleSubmit(handleUserSubmit)}
+								onSubmit={userForm.handleSubmit(
+									handleUserSubmit
+								)}
 								className="space-y-6"
 							>
 								<div>
@@ -85,7 +87,10 @@ const LoginForm = () => {
 									/>
 									{userForm.formState.errors.email && (
 										<p className="text-red-500 mt-2">
-											{userForm.formState.errors.email.message}
+											{
+												userForm.formState.errors.email
+													.message
+											}
 										</p>
 									)}
 								</div>
@@ -98,11 +103,16 @@ const LoginForm = () => {
 									/>
 									{userForm.formState.errors.password && (
 										<p className="text-red-500 mt-2">
-											{userForm.formState.errors.password.message}
+											{
+												userForm.formState.errors
+													.password.message
+											}
 										</p>
 									)}
 								</div>
-								<Button type="submit">{t('loginAsUser')}</Button>
+								<Button type="submit">
+									{t('loginAsUser')}
+								</Button>
 								<Separator />
 								<div className="flex justify-between">
 									<Link href="/forgot-password">
@@ -130,7 +140,9 @@ const LoginForm = () => {
 					>
 						<TabsContent value="admin">
 							<form
-								onSubmit={adminForm.handleSubmit(handleAdminSubmit)}
+								onSubmit={adminForm.handleSubmit(
+									handleAdminSubmit
+								)}
 								className="space-y-6"
 							>
 								<div>
@@ -141,7 +153,10 @@ const LoginForm = () => {
 									/>
 									{adminForm.formState.errors.username && (
 										<p className="text-red-500 mt-2">
-											{adminForm.formState.errors.username.message}
+											{
+												adminForm.formState.errors
+													.username.message
+											}
 										</p>
 									)}
 								</div>
@@ -154,11 +169,16 @@ const LoginForm = () => {
 									/>
 									{adminForm.formState.errors.password && (
 										<p className="text-red-500 mt-2">
-											{adminForm.formState.errors.password.message}
+											{
+												adminForm.formState.errors
+													.password.message
+											}
 										</p>
 									)}
 								</div>
-								<Button type="submit">{t('loginAsAdmin')}</Button>
+								<Button type="submit">
+									{t('loginAsAdmin')}
+								</Button>
 								<Separator />
 								<div className="flex justify-between">
 									<Link href="/forgot-password">

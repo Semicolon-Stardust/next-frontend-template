@@ -13,7 +13,7 @@ import LoginForm from '@/components/ui/login/login-form';
 import { useTranslations } from 'next-intl';
 
 interface LoginModalProps {
-    className?: string;
+	className?: string;
 	buttonVariant:
 		| 'default'
 		| 'destructive'
@@ -36,14 +36,18 @@ interface LoginModalProps {
 
 const LoginModal: React.FC<LoginModalProps> = ({
 	buttonVariant,
-    className,
+	className,
 	buttonEffect,
 }) => {
 	const t = useTranslations('Login');
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
-				<Button variant={buttonVariant} effect={buttonEffect} className={className}>
+				<Button
+					variant={buttonVariant}
+					effect={buttonEffect}
+					className={className}
+				>
 					{t('title')}
 				</Button>
 			</DialogTrigger>
