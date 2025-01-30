@@ -29,7 +29,7 @@ export default function Hero() {
 			<Carousel
 				opts={{ align: 'start', loop: true }}
 				className="w-full h-full"
-				plugins={[Autoplay({ delay: 2000 })]}
+				plugins={[Autoplay({ delay: 5000 })]}
 				setApi={setApi}
 			>
 				<CarouselContent className="h-full">
