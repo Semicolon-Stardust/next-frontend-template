@@ -29,7 +29,7 @@ export default function AlternateHero() {
 			<Carousel
 				opts={{ align: 'start', loop: true }}
 				className="w-full h-full flex items-center justify-between"
-				plugins={[Autoplay({ delay: 2000 })]}
+				plugins={[Autoplay({ delay: 5000 })]}
 				setApi={setApi}
 			>
 				<CarouselContent className="h-full w-full">
