@@ -1,0 +1,147 @@
+{
+    "NotFoundPage": {
+        "title": "Pagina Niet Gevonden",
+        "description": "De pagina die u zoekt bestaat niet.",
+        "homeLink": "Terug naar Home",
+        "aboutLink": "Leer Meer Over Ons",
+        "contactLink": "Neem Contact Op"
+    },
+    "Header": {
+        "logo": "Componentencatalogus",
+        "links": {
+            "home": "Home",
+            "about": "Over Ons",
+            "services": "Diensten",
+            "contact": "Contact"
+        },
+        "modeToggle": {
+            "light": "Licht",
+            "dark": "Donker",
+            "system": "Systeem"
+        }
+    },
+    "HomePage": {
+        "title": "Doei, wereld!",
+        "heroSection": {
+            "carousel": {
+                "1": {
+                    "image": "https://images.unsplash.com/photo-1495461199391-8c39ab674295?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXl1cnZlZGF8ZW58MHx8MHx8fDA%3D",
+                    "altText": "Slide 1",
+                    "heading": "Welkom op Ons Platform",
+                    "paragraph": "Dit is een voorbeeldbeschrijving voor Slide 1."
+                },
+                "2": {
+                    "image": "https://images.unsplash.com/photo-1495584816685-4bdbf1b5057e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D",
+                    "altText": "Slide 2",
+                    "heading": "Ontdek Meer Functies",
+                    "paragraph": "Dit is een voorbeeldbeschrijving voor Slide 2."
+                },
+                "3": {
+                    "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "altText": "Slide 3",
+                    "heading": "Doe Vandaag Nog Mee",
+                    "paragraph": "Dit is een voorbeeldbeschrijving voor Slide 3."
+                }
+            }
+        }
+    },
+    "AboutPage": {
+        "title": "Over ons",
+        "home": "Ga naar de homepage"
+    },
+    "Login": {
+        "title": "Inloggen",
+        "description": "Selecteer uw inlogtype en voer uw gegevens in.",
+        "userLogin": "Gebruiker Inloggen",
+        "adminLogin": "Beheerder Inloggen",
+        "email": "E-mail",
+        "password": "Wachtwoord",
+        "username": "Gebruikersnaam",
+        "forgotPassword": "Wachtwoord Vergeten?",
+        "loginAsUser": "Inloggen als Gebruiker",
+        "loginAsAdmin": "Inloggen als Beheerder",
+        "newUser": "Nieuwe Gebruiker?",
+        "notAdmin": "Geen Beheerder?"
+    },
+    "SignUp": {
+        "title": "Registreren",
+        "description": "Voer uw gegevens in om een account aan te maken.",
+        "fullName": "Volledige Naam",
+        "userName": "Gebruikersnaam",
+        "email": "E-mail",
+        "password": "Wachtwoord",
+        "confirmPassword": "Bevestig Wachtwoord",
+        "isAdmin": "Is Beheerder?",
+        "signUpButton": "Registreren",
+        "alreadyHaveAccount": "Heeft u al een account?",
+        "logIn": "Inloggen",
+        "adminKey": "Beheerderscode"
+    },
+    "FrequentlyAskedQuestions": {
+        "title": "Veelgestelde Vragen",
+        "description": "Vind antwoorden op de meest gestelde vragen over ons platform.",
+        "questions": {
+            "1": {
+                "question": "Wat is het doel van dit platform?",
+                "answer": "Het doel van dit platform is om een sjabloon te bieden voor het bouwen van webapplicaties en websites met een moderne frontend stack en best practices."
+            },
+            "2": {
+                "question": "Welke technologieën worden gebruikt in deze sjabloon?",
+                "answer": "Deze sjabloon gebruikt Next.js, TypeScript en Tailwind CSS voor de frontend, en Jest en React Testing Library voor het testen."
+            },
+            "3": {
+                "question": "Hoe kan ik bijdragen aan dit project?",
+                "answer": "U kunt bijdragen aan dit project door de repository te forken op GitHub, uw wijzigingen aan te brengen en een pull request in te dienen."
+            },
+            "4": {
+                "question": "Is deze sjabloon gratis te gebruiken?",
+                "answer": "Ja, deze sjabloon is gratis te gebruiken voor persoonlijke en commerciële projecten. Bronvermelding wordt wel op prijs gesteld."
+            }
+        }
+    },
+    "Footer": {
+        "logo": "Nextjs Frontend Sjabloon",
+        "description": "Dit is een Nextjs frontend sjabloon met TypeScript en Tailwind CSS voor snelle ontwikkeling van webapplicaties en websites met een moderne frontend stack en best practices.",
+        "sections": {
+            "company": {
+                "title": "Bedrijf",
+                "links": {
+                    "aboutUs": "Over Ons",
+                    "careers": "Carrières",
+                    "press": "Pers"
+                }
+            },
+            "resources": {
+                "title": "Bronnen",
+                "links": {
+                    "blog": "Blog",
+                    "helpCenter": "Helpcentrum",
+                    "contactSupport": "Contact Ondersteuning"
+                }
+            },
+            "legal": {
+                "title": "Juridisch",
+                "links": {
+                    "privacyPolicy": "Privacybeleid",
+                    "termsOfService": "Servicevoorwaarden",
+                    "cookiePolicy": "Cookiebeleid"
+                }
+            }
+        },
+        "socials": {
+            "title": "Volg Ons",
+            "github": "GitHub",
+            "linkedin": "LinkedIn",
+            "instagram": "Instagram",
+            "discord": "Discord",
+            "x": "X",
+            "notion": "Notion"
+        },
+        "allRightsReserved": "Alle rechten voorbehouden.",
+        "designedAndDevelopedBy": "Ontworpen en ontwikkeld door",
+        "madeBy": {
+            "aryanGulati": "Aryan Gulati",
+            "neelanjanMukherji": "Neelanjan Mukherji"
+        }
+    }
+}

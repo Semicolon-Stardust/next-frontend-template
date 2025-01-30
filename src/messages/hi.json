@@ -1,0 +1,147 @@
+{
+    "NotFoundPage": {
+        "title": "पृष्ठ नहीं मिला",
+        "description": "आप जिस पृष्ठ को ढूंढ रहे हैं वह मौजूद नहीं है।",
+        "homeLink": "मुखपृष्ठ पर लौटें",
+        "aboutLink": "हमारे बारे में जानें",
+        "contactLink": "हमसे संपर्क करें"
+    },
+    "Header": {
+        "logo": "कंपोनेंट कैटलॉग",
+        "links": {
+            "home": "मुखपृष्ठ",
+            "about": "हमारे बारे में",
+            "services": "सेवाएँ",
+            "contact": "संपर्क"
+        },
+        "modeToggle": {
+            "light": "लाइट",
+            "dark": "डार्क",
+            "system": "सिस्टम"
+        }
+    },
+    "HomePage": {
+        "title": "अलविदा, दुनिया!",
+        "heroSection": {
+            "carousel": {
+                "1": {
+                    "image": "https://images.unsplash.com/photo-1495461199391-8c39ab674295?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXl1cnZlZGF8ZW58MHx8MHx8fDA%3D",
+                    "altText": "स्लाइड 1",
+                    "heading": "हमारे मंच में आपका स्वागत है",
+                    "paragraph": "यह स्लाइड 1 का नमूना विवरण है।"
+                },
+                "2": {
+                    "image": "https://images.unsplash.com/photo-1495584816685-4bdbf1b5057e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D",
+                    "altText": "स्लाइड 2",
+                    "heading": "और अधिक सुविधाएँ खोजें",
+                    "paragraph": "यह स्लाइड 2 का नमूना विवरण है।"
+                },
+                "3": {
+                    "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "altText": "स्लाइड 3",
+                    "heading": "आज ही जुड़ें",
+                    "paragraph": "यह स्लाइड 3 का नमूना विवरण है।"
+                }
+            }
+        }
+    },
+    "AboutPage": {
+        "title": "हमारे बारे में",
+        "home": "मुखपृष्ठ पर जाएँ"
+    },
+    "Login": {
+        "title": "लॉगिन",
+        "description": "अपना लॉगिन प्रकार चुनें और अपनी जानकारियाँ भरें।",
+        "userLogin": "यूज़र लॉगिन",
+        "adminLogin": "व्यवस्थापक लॉगिन",
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "username": "उपयोगकर्ता नाम",
+        "forgotPassword": "पासवर्ड भूल गए?",
+        "loginAsUser": "यूज़र के रूप में लॉगिन",
+        "loginAsAdmin": "व्यवस्थापक के रूप में लॉगिन",
+        "newUser": "नया उपयोगकर्ता?",
+        "notAdmin": "व्यवस्थापक नहीं?"
+    },
+    "SignUp": {
+        "title": "साइन अप",
+        "description": "खाता बनाने के लिए अपनी जानकारियाँ भरें।",
+        "fullName": "पूरा नाम",
+        "userName": "उपयोगकर्ता नाम",
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "confirmPassword": "पासवर्ड की पुष्टि करें",
+        "isAdmin": "क्या आप व्यवस्थापक हैं?",
+        "signUpButton": "साइन अप",
+        "alreadyHaveAccount": "पहले से खाता है?",
+        "logIn": "लॉग इन",
+        "adminKey": "व्यवस्थापक कुंजी"
+    },
+    "FrequentlyAskedQuestions": {
+        "title": "अक्सर पूछे जाने वाले प्रश्न",
+        "description": "हमारे मंच के बारे में सामान्य प्रश्नों के उत्तर ढूँढें।",
+        "questions": {
+            "1": {
+                "question": "इस मंच का उद्देश्य क्या है?",
+                "answer": "इस मंच का उद्देश्य वेब एप्लीकेशन और वेबसाइट निर्माण के लिए एक आधुनिक फ्रंटेंड स्टैक और सर्वोत्तम प्रथाओं वाला टेम्पलेट प्रदान करना है।"
+            },
+            "2": {
+                "question": "इस टेम्पलेट में किन तकनीकों का उपयोग किया गया है?",
+                "answer": "फ्रंटेंड के लिए Next.js, TypeScript और Tailwind CSS तथा टेस्टिंग के लिए Jest और React Testing Library का उपयोग किया गया है।"
+            },
+            "3": {
+                "question": "मैं इस प्रोजेक्ट में कैसे योगदान कर सकता/सकती हूँ?",
+                "answer": "आप GitHub पर रिपोज़िटरी को फोर्क करके, अपने परिवर्तन करके, और पुल रिक्वेस्ट सबमिट करके योगदान दे सकते हैं।"
+            },
+            "4": {
+                "question": "क्या यह टेम्पलेट मुफ्त है?",
+                "answer": "हाँ, यह व्यक्तिगत और व्यावसायिक प्रोजेक्ट के लिए मुफ्त है, लेकिन श्रेय देना सराहनीय है।"
+            }
+        }
+    },
+    "Footer": {
+        "logo": "Nextjs फ्रंटेंड टेम्पलेट",
+        "description": "यह TypeScript और Tailwind CSS के साथ एक Nextjs फ्रंटेंड टेम्पलेट है जो आधुनिक फ्रंटएंड स्टैक और सर्वोत्तम प्रथाओं के साथ वेब एप्लीकेशन एवं वेबसाइटों के तेज़ विकास को संभव बनाता है।",
+        "sections": {
+            "company": {
+                "title": "कंपनी",
+                "links": {
+                    "aboutUs": "हमारे बारे में",
+                    "careers": "करियर",
+                    "press": "प्रेस"
+                }
+            },
+            "resources": {
+                "title": "संसाधन",
+                "links": {
+                    "blog": "ब्लॉग",
+                    "helpCenter": "सहायता केंद्र",
+                    "contactSupport": "सहायता से संपर्क करें"
+                }
+            },
+            "legal": {
+                "title": "कानूनी",
+                "links": {
+                    "privacyPolicy": "गोपनीयता नीति",
+                    "termsOfService": "सेवा की शर्तें",
+                    "cookiePolicy": "कुकी नीति"
+                }
+            }
+        },
+        "socials": {
+            "title": "हमें फ़ॉलो करें",
+            "github": "GitHub",
+            "linkedin": "LinkedIn",
+            "instagram": "Instagram",
+            "discord": "Discord",
+            "x": "X",
+            "notion": "Notion"
+        },
+        "allRightsReserved": "सभी अधिकार सुरक्षित।",
+        "designedAndDevelopedBy": "डिज़ाइन और विकास द्वारा",
+        "madeBy": {
+            "aryanGulati": "आर्यन गुलाटी",
+            "neelanjanMukherji": "नीलांजन मुखर्जी"
+        }
+    }
+}
