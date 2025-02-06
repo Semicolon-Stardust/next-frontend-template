@@ -46,7 +46,7 @@ export default function Hero() {
 								priority
 								loading="eager"
 							/>
-							<div className="absolute inset-0 w-full min-h-screen bg-[rgba(0, 0, 0, 0.2)]"></div>
+							<div className="absolute inset-0 w-full min-h-screen bg-[hsla(0, 0, 0, 0.5)] z-10"></div>
 							<div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full px-5 text-white md:ml-12 md:items-start">
 								<h1 className="mb-2 text-4xl font-bold tracking-tight md:text-left md:text-6xl drop-shadow-lg">
 									{item.heading}

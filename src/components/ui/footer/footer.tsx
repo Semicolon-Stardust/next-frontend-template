@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import Instagram from '@/Assets/instagram-logo.svg';
-import Linkedin from '@/Assets/linkedin-logo.svg';
-import Github from '@/Assets/github-logo.svg';
-import Discord from '@/Assets/discord-logo.svg';
-import X from '@/Assets/x-logo.svg';
-import Notion from '@/Assets/notion-logo.svg';
+import Instagram from '@/assets/instagram-logo.svg';
+import Linkedin from '@/assets/linkedin-logo.svg';
+import Github from '@/assets/github-logo.svg';
+import Discord from '@/assets/discord-logo.svg';
+import X from '@/assets/x-logo.svg';
+import Notion from '@/assets/notion-logo.svg';
 import { useTranslations } from 'next-intl';
 import LocaleToggle from '@/components/utils/locale-toggle';
 
@@ -139,7 +139,7 @@ export default function Footer() {
 				<Link href={footerData.logo.href}>
 					<h1
 						className={cn(
-							'text-4xl font-bold text-black dark:text-white'
+							'text-2xl font-bold text-black dark:text-white'
 						)}
 					>
 						{footerData.logo.name}
