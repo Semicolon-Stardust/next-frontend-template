@@ -25,10 +25,10 @@ export default function Hero() {
 	const [api, setApi] = useState<CarouselApi>();
 
 	return (
-		<section className="relative w-full h-screen select-none">
+		<section className="relative h-screen w-full select-none">
 			<Carousel
 				opts={{ align: 'start', loop: true }}
-				className="w-full h-full"
+				className="h-full w-full"
 				plugins={[Autoplay({ delay: 2000 })]}
 				setApi={setApi}
 			>
@@ -36,7 +36,7 @@ export default function Hero() {
 					{carouselData.map((item, index) => (
 						<CarouselItem
 							key={index}
-							className="relative w-full min-h-screen"
+							className="relative min-h-screen w-full"
 						>
 							<Image
 								src={item.image}
@@ -46,12 +46,12 @@ export default function Hero() {
 								priority
 								loading="eager"
 							/>
-							<div className="absolute inset-0 w-full min-h-screen bg-[hsla(0, 0, 0, 0.5)] z-10"></div>
-							<div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full px-5 text-white md:ml-12 md:items-start">
-								<h1 className="mb-2 text-4xl font-bold tracking-tight md:text-left md:text-6xl drop-shadow-lg">
+							<div className="bg-[hsla(0, 0, 0, 0.5)] absolute inset-0 z-10 min-h-screen w-full"></div>
+							<div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center px-5 text-white md:ml-12 md:items-start">
+								<h1 className="mb-2 text-4xl font-bold tracking-tight drop-shadow-lg md:text-left md:text-6xl">
 									{item.heading}
 								</h1>
-								<p className="pt-5 mb-4 font-medium tracking-wide text-md md:text-left md:text-2xl">
+								<p className="text-md mb-4 pt-5 font-medium tracking-wide md:text-left md:text-2xl">
 									{item.paragraph}
 								</p>
 							</div>

@@ -58,7 +58,7 @@ const LoginForm = () => {
 			value={activeTab}
 			onValueChange={(value) => setActiveTab(value as 'user' | 'admin')}
 		>
-			<TabsList className="grid grid-cols-2 gap-4 mb-6">
+			<TabsList className="mb-6 grid grid-cols-2 gap-4">
 				<TabsTrigger value="user">{t('userLogin')}</TabsTrigger>
 				<TabsTrigger value="admin">{t('adminLogin')}</TabsTrigger>
 			</TabsList>
@@ -86,7 +86,7 @@ const LoginForm = () => {
 										{...userForm.register('email')}
 									/>
 									{userForm.formState.errors.email && (
-										<p className="text-red-500 mt-2">
+										<p className="mt-2 text-red-500">
 											{
 												userForm.formState.errors.email
 													.message
@@ -102,7 +102,7 @@ const LoginForm = () => {
 										{...userForm.register('password')}
 									/>
 									{userForm.formState.errors.password && (
-										<p className="text-red-500 mt-2">
+										<p className="mt-2 text-red-500">
 											{
 												userForm.formState.errors
 													.password.message
@@ -152,7 +152,7 @@ const LoginForm = () => {
 										{...adminForm.register('username')}
 									/>
 									{adminForm.formState.errors.username && (
-										<p className="text-red-500 mt-2">
+										<p className="mt-2 text-red-500">
 											{
 												adminForm.formState.errors
 													.username.message
@@ -168,7 +168,7 @@ const LoginForm = () => {
 										{...adminForm.register('password')}
 									/>
 									{adminForm.formState.errors.password && (
-										<p className="text-red-500 mt-2">
+										<p className="mt-2 text-red-500">
 											{
 												adminForm.formState.errors
 													.password.message

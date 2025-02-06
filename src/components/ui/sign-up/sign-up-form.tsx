@@ -76,7 +76,7 @@ const SignUpForm = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}
 				>
-					<div className={cn('flex-1 min-w-[250px]')}>
+					<div className={cn('min-w-[250px] flex-1')}>
 						<Label htmlFor="name">{t('fullName')}</Label>
 						<Input
 							id="name"
@@ -85,7 +85,7 @@ const SignUpForm = () => {
 							className="w-full"
 						/>
 					</div>
-					<div className={cn('flex-1 min-w-[250px]')}>
+					<div className={cn('min-w-[250px] flex-1')}>
 						<Label htmlFor="email">{t('email')}</Label>
 						<Input
 							id="email"
@@ -102,7 +102,7 @@ const SignUpForm = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}
 				>
-					<div className={cn('flex-1 min-w-[250px]')}>
+					<div className={cn('min-w-[250px] flex-1')}>
 						<Label htmlFor="username">{t('userName')}</Label>
 						<Input
 							id="username"
@@ -119,7 +119,7 @@ const SignUpForm = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.5 }}
 				>
-					<div className={cn('flex-1 min-w-[250px]')}>
+					<div className={cn('min-w-[250px] flex-1')}>
 						<Label htmlFor="password">{t('password')}</Label>
 						<Input
 							id="password"
@@ -129,7 +129,7 @@ const SignUpForm = () => {
 							className="w-full"
 						/>
 					</div>
-					<div className={cn('flex-1 min-w-[250px]')}>
+					<div className={cn('min-w-[250px] flex-1')}>
 						<Label htmlFor="confirmPassword">
 							{t('confirmPassword')}
 						</Label>
@@ -168,7 +168,7 @@ const SignUpForm = () => {
 								exit={{ opacity: 0, y: -20 }}
 								transition={{ duration: 0.5 }}
 							>
-								<div className={cn('flex-1 min-w-[250px]')}>
+								<div className={cn('min-w-[250px] flex-1')}>
 									<Label htmlFor="adminKey">Admin Key</Label>
 									<Input
 										id="adminKey"
@@ -186,7 +186,7 @@ const SignUpForm = () => {
 				<Button type="submit" className={cn('w-full')}>
 					Sign Up
 				</Button>
-				<div className={cn('flex items-center justify-end text-sm ')}>
+				<div className={cn('flex items-center justify-end text-sm')}>
 					<p>{t('alreadyHaveAccount')}</p>
 					<LoginModal
 						buttonVariant="link"

@@ -34,7 +34,7 @@ export default function NotFoundPage() {
 	return (
 		<motion.div
 			className={cn(
-				'flex flex-col items-center justify-center min-h-screen bg-gray-100/30 dark:bg-gray-900/30 p-4 sm:p-8'
+				'flex min-h-screen flex-col items-center justify-center bg-gray-100/30 p-4 dark:bg-gray-900/30 sm:p-8'
 			)}
 			variants={containerVariants}
 			initial="hidden"
@@ -58,7 +58,7 @@ export default function NotFoundPage() {
 			</motion.div>
 			<motion.h1
 				className={cn(
-					'text-4xl sm:text-6xl font-bold text-black dark:text-white mb-4 text-center'
+					'mb-4 text-center text-4xl font-bold text-black dark:text-white sm:text-6xl'
 				)}
 				variants={itemVariants}
 			>
@@ -66,7 +66,7 @@ export default function NotFoundPage() {
 			</motion.h1>
 			<motion.p
 				className={cn(
-					'text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-8 text-center'
+					'mb-8 text-center text-base text-gray-700 dark:text-gray-300 sm:text-lg'
 				)}
 				variants={itemVariants}
 			>
@@ -74,7 +74,7 @@ export default function NotFoundPage() {
 			</motion.p>
 			<motion.div
 				className={cn(
-					'flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4'
+					'flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0'
 				)}
 				variants={itemVariants}
 			>

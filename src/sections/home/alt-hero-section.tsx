@@ -25,10 +25,10 @@ export default function AlternateHero() {
 	const [api, setApi] = useState<CarouselApi>();
 
 	return (
-		<section className="w-full h-[100vh] select-none flex items-center">
+		<section className="flex h-[100vh] w-full select-none items-center">
 			<Carousel
 				opts={{ align: 'start', loop: true }}
-				className="w-full h-full flex items-center justify-between"
+				className="flex h-full w-full items-center justify-between"
 				plugins={[Autoplay({ delay: 2000 })]}
 				setApi={setApi}
 			>
@@ -36,18 +36,18 @@ export default function AlternateHero() {
 					{carouselData.map((item, index) => (
 						<CarouselItem
 							key={index}
-							className="w-full grid grid-cols-2 sm:grid-cols-1 h-full "
+							className="grid h-full w-full grid-cols-2 sm:grid-cols-1"
 						>
-							<div className="flex flex-col justify-center items-center w-1/2 h-full text-black dark:text-white">
-								<h1 className="mb-2 text-4xl font-bold tracking-tight text-left md:text-6xl">
+							<div className="flex h-full w-1/2 flex-col items-center justify-center text-black dark:text-white">
+								<h1 className="mb-2 text-left text-4xl font-bold tracking-tight md:text-6xl">
 									{item.heading}
 								</h1>
-								<p className="pt-5 mb-4 font-medium tracking-wide text-left text-md md:text-2xl">
+								<p className="text-md mb-4 pt-5 text-left font-medium tracking-wide md:text-2xl">
 									{item.paragraph}
 								</p>
 							</div>
 
-							<div className="w-1/2 min-h-screen flex items-center justify-center">
+							<div className="flex min-h-screen w-1/2 items-center justify-center">
 								<Image
 									src={item.image}
 									alt={item.altText}
