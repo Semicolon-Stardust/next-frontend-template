@@ -51,7 +51,7 @@ const LoginModal: React.FC<LoginModalProps> = ({
 					{t('title')}
 				</Button>
 			</DialogTrigger>
-			<DialogContent className="w-full max-w-2xl p-10 b</DialogTrigger>g-white dark:bg-black rounded-2xl">
+			<DialogContent className="b</DialogTrigger>g-white w-full max-w-2xl rounded-2xl p-10 dark:bg-black">
 				<DialogHeader>
 					<DialogTitle>{t('title')}</DialogTitle>
 					<DialogDescription>{t('description')}</DialogDescription>

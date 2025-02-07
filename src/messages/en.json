@@ -25,19 +25,19 @@
 		"heroSection": {
 			"carousel": {
 				"1": {
-					"image": "https://images.unsplash.com/photo-1495461199391-8c39ab674295?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXl1cnZlZGF8ZW58MHx8MHx8fDA%3D",
+					"image": "https://images.unsplash.com/photo-1475359524104-d101d02a042b",
 					"altText": "Slide 1",
 					"heading": "Welcome to Our Platform",
 					"paragraph": "This is a sample description for Slide 1."
 				},
 				"2": {
-					"image": "https://images.unsplash.com/photo-1495584816685-4bdbf1b5057e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D",
+					"image": "https://images.unsplash.com/photo-1485134532658-d720895a3b5e",
 					"altText": "Slide 2",
 					"heading": "Discover More Features",
 					"paragraph": "This is a sample description for Slide 2."
 				},
 				"3": {
-					"image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15",
 					"altText": "Slide 3",
 					"heading": "Join Us Today",
 					"paragraph": "This is a sample description for Slide 3."

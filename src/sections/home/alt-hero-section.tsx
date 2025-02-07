@@ -13,7 +13,7 @@ import {
 import { CarouselDots } from '@/components/ui/carousel-dots';
 import { type CarouselApi } from '@/components/ui/carousel';
 
-export default function Hero() {
+export default function AlternateHero() {
 	const t = useTranslations('HomePage.heroSection.carousel');
 	const slideKeys = ['1', '2', '3'];
 	const carouselData = slideKeys.map((key) => ({
@@ -25,35 +25,42 @@ export default function Hero() {
 	const [api, setApi] = useState<CarouselApi>();
 
 	return (
-		<section className="relative h-screen w-full select-none">
+		<section className="flex h-[100vh] w-full items-center select-none">
 			<Carousel
 				opts={{ align: 'start', loop: true }}
-				className="h-full w-full"
+				className="flex h-full w-full items-center justify-between"
 				plugins={[Autoplay({ delay: 5000 })]}
 				setApi={setApi}
 			>
-				<CarouselContent className="h-full">
+				<CarouselContent className="h-full w-full">
 					{carouselData.map((item, index) => (
 						<CarouselItem
 							key={index}
-							className="relative min-h-screen w-full"
+							className="grid h-full w-full grid-cols-2"
 						>
-							<Image
-								src={item.image}
-								alt={item.altText}
-								fill
-								style={{ objectFit: 'cover' }}
-								priority
-								loading="eager"
-							/>
-							<div className="absolute inset-0 z-10 min-h-screen w-full bg-black/40"></div>
-							<div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center px-5 text-center text-white">
-								<h1 className="mb-2 text-4xl font-bold tracking-tight drop-shadow-lg md:text-left md:text-6xl">
+							<div className="flex h-full w-1/2 flex-col items-center justify-center text-black dark:text-white">
+								<h1 className="mb-2 text-center text-2xl font-bold tracking-tight md:text-left md:text-4xl">
 									{item.heading}
 								</h1>
-								<p className="text-md mb-4 pt-5 font-medium tracking-wide md:text-left md:text-2xl">
+								<p className="text-md mb-4 pt-5 text-center font-medium tracking-wide md:text-left md:text-2xl">
 									{item.paragraph}
 								</p>
+							</div>
+
+							<div className="flex min-h-screen w-1/2 items-center justify-center">
+								<Image
+									src={item.image}
+									alt={item.altText}
+									width={800}
+									height={600}
+									style={{
+										objectFit: 'cover',
+										width: '100%',
+										height: '100%',
+									}}
+									priority
+									loading="eager"
+								/>
 							</div>
 						</CarouselItem>
 					))}
