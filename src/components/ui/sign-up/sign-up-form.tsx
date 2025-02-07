@@ -168,7 +168,7 @@ const SignUpForm = () => {
 								exit={{ opacity: 0, y: -20 }}
 								transition={{ duration: 0.5 }}
 							>
-								<div className={cn('flex-1 min-w-[250px]')}>
+								<div className={cn('min-w-[250px] flex-1')}>
 									<Label htmlFor="adminKey">
 										{t('adminKey')}
 									</Label>

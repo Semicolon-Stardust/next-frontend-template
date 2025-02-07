@@ -21,29 +21,29 @@ export default function AlternateHero() {
 	}));
 
 	return (
-		<section className="min-h-screen flex items-center bg-gray-100 dark:bg-gray-900">
+		<section className="flex min-h-screen items-center bg-gray-100 dark:bg-gray-900">
 			<Carousel
 				opts={{ align: 'start', loop: true }}
-				className="w-full h-full"
+				className="h-full w-full"
 				plugins={[Autoplay({ delay: 5000 })]}
 			>
-				<CarouselContent className="md:w-full w-[90vw] h-full">
+				<CarouselContent className="h-full w-[90vw] md:w-full">
 					{carouselData.map((item, index) => (
 						<CarouselItem
 							key={index}
-							className="w-full flex flex-col-reverse md:flex-row items-center justify-between"
+							className="flex w-full flex-col-reverse items-center justify-between md:flex-row"
 						>
 							<motion.div
 								initial={{ opacity: 0, x: -50 }}
 								whileInView={{ opacity: 1, x: 0 }}
 								transition={{ duration: 0.8 }}
 								viewport={{ once: true }}
-								className="flex flex-col justify-center items-center w-full md:w-1/2 text-black dark:text-white"
+								className="flex w-full flex-col items-center justify-center text-black md:w-1/2 dark:text-white"
 							>
-								<h1 className="mb-4 text-4xl md:text-6xl font-bold tracking-tight text-center">
+								<h1 className="mb-4 text-center text-4xl font-bold tracking-tight md:text-6xl">
 									{item.heading}
 								</h1>
-								<p className="mb-6 text-xl md:text-3xl font-medium tracking-wide text-center">
+								<p className="mb-6 text-center text-xl font-medium tracking-wide md:text-3xl">
 									{item.paragraph}
 								</p>
 							</motion.div>
@@ -53,13 +53,13 @@ export default function AlternateHero() {
 								whileInView={{ opacity: 1, scale: 1 }}
 								transition={{ duration: 0.8 }}
 								viewport={{ once: true }}
-								className="relative w-full h-96 rounded-2xl overflow-hidden shadow-lg md:w-1/2"
+								className="relative h-96 w-full overflow-hidden rounded-2xl shadow-lg md:w-1/2"
 							>
 								<motion.div
 									initial={{ opacity: 0, scale: 0.8 }}
 									whileInView={{ opacity: 1, scale: 1 }}
 									transition={{ duration: 0.8 }}
-									className="w-full h-full"
+									className="h-full w-full"
 								>
 									<ImageWrapper
 										src={item.image}

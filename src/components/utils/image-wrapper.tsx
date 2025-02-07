@@ -15,7 +15,7 @@ export default function ImageWrapper({
 	return (
 		<div
 			className={cn(
-				'relative w-full h-[200px] md:h-[90vh] overflow-hidden shadow-lg rounded-2xl p-4 md:p-0',
+				'relative h-[200px] w-full overflow-hidden rounded-2xl p-4 shadow-lg md:h-[90vh] md:p-0',
 				className
 			)}
 		>

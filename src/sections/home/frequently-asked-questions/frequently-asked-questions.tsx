@@ -14,18 +14,18 @@ export default function FAQ() {
 		content: t(`questions.${key}.answer`),
 	}));
 	return (
-		<section className="w-full min-h-screen flex items-center justify-center bg-white dark:bg-black px-4">
+		<section className="flex min-h-screen w-full items-center justify-center bg-white px-4 dark:bg-black">
 			<motion.div
 				initial={{ opacity: 0, y: 30 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.6, ease: 'easeOut' }}
 				viewport={{ once: true }}
-				className="w-full max-w-4xl p-6 md:p-10 rounded-2xl bg-white dark:bg-black shadow-2xl border border-gray-200 dark:border-gray-700"
+				className="w-full max-w-4xl rounded-2xl border border-gray-200 bg-white p-6 shadow-2xl md:p-10 dark:border-gray-700 dark:bg-black"
 			>
-				<h2 className="text-4xl font-bold text-center mb-6 text-black dark:text-white">
+				<h2 className="mb-6 text-center text-4xl font-bold text-black dark:text-white">
 					{t('title')}
 				</h2>
-				<p className="text-center text-gray-600 dark:text-gray-300 mb-6">
+				<p className="mb-6 text-center text-gray-600 dark:text-gray-300">
 					{t('description')}
 				</p>
 				<DynamicAccordion items={accordionItems} />
