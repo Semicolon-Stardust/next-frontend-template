@@ -1,147 +1,147 @@
 {
-    "NotFoundPage": {
-        "title": "Page Non Trouvée",
-        "description": "La page que vous recherchez n'existe pas.",
-        "homeLink": "Retour à l'Accueil",
-        "aboutLink": "En Savoir Plus Sur Nous",
-        "contactLink": "Contactez-Nous"
-    },
-    "Header": {
-        "logo": "Catalogue de Composants",
-        "links": {
-            "home": "Accueil",
-            "about": "À Propos",
-            "services": "Services",
-            "contact": "Contact"
-        },
-        "modeToggle": {
-            "light": "Clair",
-            "dark": "Sombre",
-            "system": "Système"
-        }
-    },
-    "HomePage": {
-        "title": "Au revoir, monde!",
-        "heroSection": {
-            "carousel": {
-                "1": {
-                    "image": "https://images.unsplash.com/photo-1495461199391-8c39ab674295?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXl1cnZlZGF8ZW58MHx8MHx8fDA%3D",
-                    "altText": "Diapositive 1",
-                    "heading": "Bienvenue sur Notre Plateforme",
-                    "paragraph": "Ceci est une description pour la diapositive 1."
-                },
-                "2": {
-                    "image": "https://images.unsplash.com/photo-1495584816685-4bdbf1b5057e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D",
-                    "altText": "Diapositive 2",
-                    "heading": "Découvrez Plus de Fonctionnalités",
-                    "paragraph": "Ceci est une description pour la diapositive 2."
-                },
-                "3": {
-                    "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "altText": "Diapositive 3",
-                    "heading": "Rejoignez-Nous Aujourd'hui",
-                    "paragraph": "Ceci est une description pour la diapositive 3."
-                }
-            }
-        }
-    },
-    "AboutPage": {
-        "title": "À Propos de Nous",
-        "home": "Aller à la page d'accueil"
-    },
-    "Login": {
-        "title": "Connexion",
-        "description": "Sélectionnez votre type de connexion et entrez vos identifiants.",
-        "userLogin": "Connexion Utilisateur",
-        "adminLogin": "Connexion Administrateur",
-        "email": "Email",
-        "password": "Mot de passe",
-        "username": "Nom d'utilisateur",
-        "forgotPassword": "Mot de passe oublié ?",
-        "loginAsUser": "Se connecter en tant qu'utilisateur",
-        "loginAsAdmin": "Se connecter en tant qu'administrateur",
-        "newUser": "Nouvel utilisateur ?",
-        "notAdmin": "Pas administrateur ?"
-    },
-    "SignUp": {
-        "title": "Inscription",
-        "description": "Entrez vos informations pour créer un compte.",
-        "fullName": "Nom complet",
-        "userName": "Nom d'utilisateur",
-        "email": "Email",
-        "password": "Mot de passe",
-        "confirmPassword": "Confirmer le mot de passe",
-        "isAdmin": "Est administrateur ?",
-        "signUpButton": "S'inscrire",
-        "alreadyHaveAccount": "Vous avez déjà un compte ?",
-        "logIn": "Se connecter",
-        "adminKey": "Clé administrateur"
-    },
-    "FrequentlyAskedQuestions": {
-        "title": "Questions Fréquemment Posées",
-        "description": "Trouvez les réponses aux questions les plus courantes sur notre plateforme.",
-        "questions": {
-            "1": {
-                "question": "Quel est le but de cette plateforme ?",
-                "answer": "Le but de cette plateforme est de fournir un modèle pour créer des applications web avec une pile frontale moderne et les meilleures pratiques."
-            },
-            "2": {
-                "question": "Quelles technologies sont utilisées dans ce modèle ?",
-                "answer": "Ce modèle utilise Next.js, TypeScript et Tailwind CSS pour le frontend, et Jest et React Testing Library pour les tests."
-            },
-            "3": {
-                "question": "Comment puis-je contribuer à ce projet ?",
-                "answer": "Vous pouvez contribuer à ce projet en créant un fork du dépôt sur GitHub, en faisant vos modifications et en soumettant une pull request."
-            },
-            "4": {
-                "question": "Ce modèle est-il gratuit ?",
-                "answer": "Oui, ce modèle est gratuit pour les projets personnels et commerciaux. Cependant, une attribution est appréciée."
-            }
-        }
-    },
-    "Footer": {
-        "logo": "Modèle Frontend Nextjs",
-        "description": "Ceci est un modèle frontend Nextjs avec TypeScript et Tailwind CSS pour le développement rapide d'applications web avec une pile frontale moderne et les meilleures pratiques.",
-        "sections": {
-            "company": {
-                "title": "Entreprise",
-                "links": {
-                    "aboutUs": "À Propos",
-                    "careers": "Carrières",
-                    "press": "Presse"
-                }
-            },
-            "resources": {
-                "title": "Ressources",
-                "links": {
-                    "blog": "Blog",
-                    "helpCenter": "Centre d'Aide",
-                    "contactSupport": "Contacter le Support"
-                }
-            },
-            "legal": {
-                "title": "Juridique",
-                "links": {
-                    "privacyPolicy": "Politique de Confidentialité",
-                    "termsOfService": "Conditions d'Utilisation",
-                    "cookiePolicy": "Politique des Cookies"
-                }
-            }
-        },
-        "socials": {
-            "title": "Suivez-Nous",
-            "github": "GitHub",
-            "linkedin": "LinkedIn",
-            "instagram": "Instagram",
-            "discord": "Discord",
-            "x": "X",
-            "notion": "Notion"
-        },
-        "allRightsReserved": "Tous droits réservés.",
-        "designedAndDevelopedBy": "Conçu et développé par",
-        "madeBy": {
-            "aryanGulati": "Aryan Gulati",
-            "neelanjanMukherji": "Neelanjan Mukherji"
-        }
-    }
+	"NotFoundPage": {
+		"title": "Page Non Trouvée",
+		"description": "La page que vous recherchez n'existe pas.",
+		"homeLink": "Retour à l'Accueil",
+		"aboutLink": "En Savoir Plus Sur Nous",
+		"contactLink": "Contactez-Nous"
+	},
+	"Header": {
+		"logo": "Catalogue de Composants",
+		"links": {
+			"home": "Accueil",
+			"about": "À Propos",
+			"services": "Services",
+			"contact": "Contact"
+		},
+		"modeToggle": {
+			"light": "Clair",
+			"dark": "Sombre",
+			"system": "Système"
+		}
+	},
+	"HomePage": {
+		"title": "Au revoir, monde!",
+		"heroSection": {
+			"carousel": {
+				"1": {
+					"image": "https://images.unsplash.com/photo-1495461199391-8c39ab674295?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXl1cnZlZGF8ZW58MHx8MHx8fDA%3D",
+					"altText": "Diapositive 1",
+					"heading": "Bienvenue sur Notre Plateforme",
+					"paragraph": "Ceci est une description pour la diapositive 1."
+				},
+				"2": {
+					"image": "https://images.unsplash.com/photo-1495584816685-4bdbf1b5057e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D",
+					"altText": "Diapositive 2",
+					"heading": "Découvrez Plus de Fonctionnalités",
+					"paragraph": "Ceci est une description pour la diapositive 2."
+				},
+				"3": {
+					"image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"altText": "Diapositive 3",
+					"heading": "Rejoignez-Nous Aujourd'hui",
+					"paragraph": "Ceci est une description pour la diapositive 3."
+				}
+			}
+		}
+	},
+	"AboutPage": {
+		"title": "À Propos de Nous",
+		"home": "Aller à la page d'accueil"
+	},
+	"Login": {
+		"title": "Connexion",
+		"description": "Sélectionnez votre type de connexion et entrez vos identifiants.",
+		"userLogin": "Connexion Utilisateur",
+		"adminLogin": "Connexion Administrateur",
+		"email": "Email",
+		"password": "Mot de passe",
+		"username": "Nom d'utilisateur",
+		"forgotPassword": "Mot de passe oublié ?",
+		"loginAsUser": "Se connecter en tant qu'utilisateur",
+		"loginAsAdmin": "Se connecter en tant qu'administrateur",
+		"newUser": "Nouvel utilisateur ?",
+		"notAdmin": "Pas administrateur ?"
+	},
+	"SignUp": {
+		"title": "Inscription",
+		"description": "Entrez vos informations pour créer un compte.",
+		"fullName": "Nom complet",
+		"userName": "Nom d'utilisateur",
+		"email": "Email",
+		"password": "Mot de passe",
+		"confirmPassword": "Confirmer le mot de passe",
+		"isAdmin": "Est administrateur ?",
+		"signUpButton": "S'inscrire",
+		"alreadyHaveAccount": "Vous avez déjà un compte ?",
+		"logIn": "Se connecter",
+		"adminKey": "Clé administrateur"
+	},
+	"FrequentlyAskedQuestions": {
+		"title": "Questions Fréquemment Posées",
+		"description": "Trouvez les réponses aux questions les plus courantes sur notre plateforme.",
+		"questions": {
+			"1": {
+				"question": "Quel est le but de cette plateforme ?",
+				"answer": "Le but de cette plateforme est de fournir un modèle pour créer des applications web avec une pile frontale moderne et les meilleures pratiques."
+			},
+			"2": {
+				"question": "Quelles technologies sont utilisées dans ce modèle ?",
+				"answer": "Ce modèle utilise Next.js, TypeScript et Tailwind CSS pour le frontend, et Jest et React Testing Library pour les tests."
+			},
+			"3": {
+				"question": "Comment puis-je contribuer à ce projet ?",
+				"answer": "Vous pouvez contribuer à ce projet en créant un fork du dépôt sur GitHub, en faisant vos modifications et en soumettant une pull request."
+			},
+			"4": {
+				"question": "Ce modèle est-il gratuit ?",
+				"answer": "Oui, ce modèle est gratuit pour les projets personnels et commerciaux. Cependant, une attribution est appréciée."
+			}
+		}
+	},
+	"Footer": {
+		"logo": "Modèle Frontend Nextjs",
+		"description": "Ceci est un modèle frontend Nextjs avec TypeScript et Tailwind CSS pour le développement rapide d'applications web avec une pile frontale moderne et les meilleures pratiques.",
+		"sections": {
+			"company": {
+				"title": "Entreprise",
+				"links": {
+					"aboutUs": "À Propos",
+					"careers": "Carrières",
+					"press": "Presse"
+				}
+			},
+			"resources": {
+				"title": "Ressources",
+				"links": {
+					"blog": "Blog",
+					"helpCenter": "Centre d'Aide",
+					"contactSupport": "Contacter le Support"
+				}
+			},
+			"legal": {
+				"title": "Juridique",
+				"links": {
+					"privacyPolicy": "Politique de Confidentialité",
+					"termsOfService": "Conditions d'Utilisation",
+					"cookiePolicy": "Politique des Cookies"
+				}
+			}
+		},
+		"socials": {
+			"title": "Suivez-Nous",
+			"github": "GitHub",
+			"linkedin": "LinkedIn",
+			"instagram": "Instagram",
+			"discord": "Discord",
+			"x": "X",
+			"notion": "Notion"
+		},
+		"allRightsReserved": "Tous droits réservés.",
+		"designedAndDevelopedBy": "Conçu et développé par",
+		"madeBy": {
+			"aryanGulati": "Aryan Gulati",
+			"neelanjanMukherji": "Neelanjan Mukherji"
+		}
+	}
 }

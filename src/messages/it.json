@@ -1,147 +1,147 @@
 {
-    "NotFoundPage": {
-        "title": "Pagina Non Trovata",
-        "description": "La pagina che stai cercando non esiste.",
-        "homeLink": "Torna alla Home",
-        "aboutLink": "Scopri di Più su di Noi",
-        "contactLink": "Contattaci"
-    },
-    "Header": {
-        "logo": "Catalogo Componenti",
-        "links": {
-            "home": "Home",
-            "about": "Chi Siamo",
-            "services": "Servizi",
-            "contact": "Contatti"
-        },
-        "modeToggle": {
-            "light": "Chiaro",
-            "dark": "Scuro",
-            "system": "Sistema"
-        }
-    },
-    "HomePage": {
-        "title": "Ciao, mondo!",
-        "heroSection": {
-            "carousel": {
-                "1": {
-                    "image": "https://images.unsplash.com/photo-1495461199391-8c39ab674295?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXl1cnZlZGF8ZW58MHx8MHx8fDA%3D",
-                    "altText": "Slide 1",
-                    "heading": "Benvenuto sulla Nostra Piattaforma",
-                    "paragraph": "Questa è una descrizione di esempio per la Slide 1."
-                },
-                "2": {
-                    "image": "https://images.unsplash.com/photo-1495584816685-4bdbf1b5057e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D",
-                    "altText": "Slide 2",
-                    "heading": "Scopri Altre Funzionalità",
-                    "paragraph": "Questa è una descrizione di esempio per la Slide 2."
-                },
-                "3": {
-                    "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "altText": "Slide 3",
-                    "heading": "Unisciti a Noi Oggi",
-                    "paragraph": "Questa è una descrizione di esempio per la Slide 3."
-                }
-            }
-        }
-    },
-    "AboutPage": {
-        "title": "Chi Siamo",
-        "home": "Vai alla pagina principale"
-    },
-    "Login": {
-        "title": "Accesso",
-        "description": "Seleziona il tipo di accesso e inserisci le tue credenziali.",
-        "userLogin": "Accesso Utente",
-        "adminLogin": "Accesso Amministratore",
-        "email": "Email",
-        "password": "Password",
-        "username": "Nome Utente",
-        "forgotPassword": "Password Dimenticata?",
-        "loginAsUser": "Accedi come Utente",
-        "loginAsAdmin": "Accedi come Amministratore",
-        "newUser": "Nuovo Utente?",
-        "notAdmin": "Non sei un Amministratore?"
-    },
-    "SignUp": {
-        "title": "Registrazione",
-        "description": "Inserisci i tuoi dati per creare un account.",
-        "fullName": "Nome Completo",
-        "userName": "Nome Utente",
-        "email": "Email",
-        "password": "Password",
-        "confirmPassword": "Conferma Password",
-        "isAdmin": "Sei un Amministratore?",
-        "signUpButton": "Registrati",
-        "alreadyHaveAccount": "Hai già un account?",
-        "logIn": "Accedi",
-        "adminKey": "Chiave Amministratore"
-    },
-    "FrequentlyAskedQuestions": {
-        "title": "Domande Frequenti",
-        "description": "Trova risposte alle domande più comuni sulla nostra piattaforma.",
-        "questions": {
-            "1": {
-                "question": "Qual è lo scopo di questa piattaforma?",
-                "answer": "Lo scopo di questa piattaforma è fornire un modello per la creazione di applicazioni web e siti web con uno stack frontend moderno e le migliori pratiche."
-            },
-            "2": {
-                "question": "Quali tecnologie sono utilizzate in questo modello?",
-                "answer": "Questo modello utilizza Next.js, TypeScript e Tailwind CSS per il frontend, e Jest e React Testing Library per i test."
-            },
-            "3": {
-                "question": "Come posso contribuire a questo progetto?",
-                "answer": "Puoi contribuire a questo progetto facendo un fork del repository su GitHub, apportando le tue modifiche e inviando una pull request."
-            },
-            "4": {
-                "question": "Questo modello è gratuito?",
-                "answer": "Sì, questo modello è gratuito per progetti personali e commerciali. Tuttavia, l'attribuzione è apprezzata."
-            }
-        }
-    },
-    "Footer": {
-        "logo": "Template Frontend Nextjs",
-        "description": "Questo è un template frontend Nextjs con TypeScript e Tailwind CSS per lo sviluppo rapido di applicazioni web e siti web con uno stack frontend moderno e le migliori pratiche.",
-        "sections": {
-            "company": {
-                "title": "Azienda",
-                "links": {
-                    "aboutUs": "Chi Siamo",
-                    "careers": "Carriere",
-                    "press": "Stampa"
-                }
-            },
-            "resources": {
-                "title": "Risorse",
-                "links": {
-                    "blog": "Blog",
-                    "helpCenter": "Centro Assistenza",
-                    "contactSupport": "Contatta il Supporto"
-                }
-            },
-            "legal": {
-                "title": "Legale",
-                "links": {
-                    "privacyPolicy": "Informativa sulla Privacy",
-                    "termsOfService": "Termini di Servizio",
-                    "cookiePolicy": "Politica dei Cookie"
-                }
-            }
-        },
-        "socials": {
-            "title": "Seguici",
-            "github": "GitHub",
-            "linkedin": "LinkedIn",
-            "instagram": "Instagram",
-            "discord": "Discord",
-            "x": "X",
-            "notion": "Notion"
-        },
-        "allRightsReserved": "Tutti i diritti riservati.",
-        "designedAndDevelopedBy": "Progettato e sviluppato da",
-        "madeBy": {
-            "aryanGulati": "Aryan Gulati",
-            "neelanjanMukherji": "Neelanjan Mukherji"
-        }
-    }
+	"NotFoundPage": {
+		"title": "Pagina Non Trovata",
+		"description": "La pagina che stai cercando non esiste.",
+		"homeLink": "Torna alla Home",
+		"aboutLink": "Scopri di Più su di Noi",
+		"contactLink": "Contattaci"
+	},
+	"Header": {
+		"logo": "Catalogo Componenti",
+		"links": {
+			"home": "Home",
+			"about": "Chi Siamo",
+			"services": "Servizi",
+			"contact": "Contatti"
+		},
+		"modeToggle": {
+			"light": "Chiaro",
+			"dark": "Scuro",
+			"system": "Sistema"
+		}
+	},
+	"HomePage": {
+		"title": "Ciao, mondo!",
+		"heroSection": {
+			"carousel": {
+				"1": {
+					"image": "https://images.unsplash.com/photo-1495461199391-8c39ab674295?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXl1cnZlZGF8ZW58MHx8MHx8fDA%3D",
+					"altText": "Slide 1",
+					"heading": "Benvenuto sulla Nostra Piattaforma",
+					"paragraph": "Questa è una descrizione di esempio per la Slide 1."
+				},
+				"2": {
+					"image": "https://images.unsplash.com/photo-1495584816685-4bdbf1b5057e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D",
+					"altText": "Slide 2",
+					"heading": "Scopri Altre Funzionalità",
+					"paragraph": "Questa è una descrizione di esempio per la Slide 2."
+				},
+				"3": {
+					"image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"altText": "Slide 3",
+					"heading": "Unisciti a Noi Oggi",
+					"paragraph": "Questa è una descrizione di esempio per la Slide 3."
+				}
+			}
+		}
+	},
+	"AboutPage": {
+		"title": "Chi Siamo",
+		"home": "Vai alla pagina principale"
+	},
+	"Login": {
+		"title": "Accesso",
+		"description": "Seleziona il tipo di accesso e inserisci le tue credenziali.",
+		"userLogin": "Accesso Utente",
+		"adminLogin": "Accesso Amministratore",
+		"email": "Email",
+		"password": "Password",
+		"username": "Nome Utente",
+		"forgotPassword": "Password Dimenticata?",
+		"loginAsUser": "Accedi come Utente",
+		"loginAsAdmin": "Accedi come Amministratore",
+		"newUser": "Nuovo Utente?",
+		"notAdmin": "Non sei un Amministratore?"
+	},
+	"SignUp": {
+		"title": "Registrazione",
+		"description": "Inserisci i tuoi dati per creare un account.",
+		"fullName": "Nome Completo",
+		"userName": "Nome Utente",
+		"email": "Email",
+		"password": "Password",
+		"confirmPassword": "Conferma Password",
+		"isAdmin": "Sei un Amministratore?",
+		"signUpButton": "Registrati",
+		"alreadyHaveAccount": "Hai già un account?",
+		"logIn": "Accedi",
+		"adminKey": "Chiave Amministratore"
+	},
+	"FrequentlyAskedQuestions": {
+		"title": "Domande Frequenti",
+		"description": "Trova risposte alle domande più comuni sulla nostra piattaforma.",
+		"questions": {
+			"1": {
+				"question": "Qual è lo scopo di questa piattaforma?",
+				"answer": "Lo scopo di questa piattaforma è fornire un modello per la creazione di applicazioni web e siti web con uno stack frontend moderno e le migliori pratiche."
+			},
+			"2": {
+				"question": "Quali tecnologie sono utilizzate in questo modello?",
+				"answer": "Questo modello utilizza Next.js, TypeScript e Tailwind CSS per il frontend, e Jest e React Testing Library per i test."
+			},
+			"3": {
+				"question": "Come posso contribuire a questo progetto?",
+				"answer": "Puoi contribuire a questo progetto facendo un fork del repository su GitHub, apportando le tue modifiche e inviando una pull request."
+			},
+			"4": {
+				"question": "Questo modello è gratuito?",
+				"answer": "Sì, questo modello è gratuito per progetti personali e commerciali. Tuttavia, l'attribuzione è apprezzata."
+			}
+		}
+	},
+	"Footer": {
+		"logo": "Template Frontend Nextjs",
+		"description": "Questo è un template frontend Nextjs con TypeScript e Tailwind CSS per lo sviluppo rapido di applicazioni web e siti web con uno stack frontend moderno e le migliori pratiche.",
+		"sections": {
+			"company": {
+				"title": "Azienda",
+				"links": {
+					"aboutUs": "Chi Siamo",
+					"careers": "Carriere",
+					"press": "Stampa"
+				}
+			},
+			"resources": {
+				"title": "Risorse",
+				"links": {
+					"blog": "Blog",
+					"helpCenter": "Centro Assistenza",
+					"contactSupport": "Contatta il Supporto"
+				}
+			},
+			"legal": {
+				"title": "Legale",
+				"links": {
+					"privacyPolicy": "Informativa sulla Privacy",
+					"termsOfService": "Termini di Servizio",
+					"cookiePolicy": "Politica dei Cookie"
+				}
+			}
+		},
+		"socials": {
+			"title": "Seguici",
+			"github": "GitHub",
+			"linkedin": "LinkedIn",
+			"instagram": "Instagram",
+			"discord": "Discord",
+			"x": "X",
+			"notion": "Notion"
+		},
+		"allRightsReserved": "Tutti i diritti riservati.",
+		"designedAndDevelopedBy": "Progettato e sviluppato da",
+		"madeBy": {
+			"aryanGulati": "Aryan Gulati",
+			"neelanjanMukherji": "Neelanjan Mukherji"
+		}
+	}
 }

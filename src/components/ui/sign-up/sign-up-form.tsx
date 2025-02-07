@@ -169,7 +169,9 @@ const SignUpForm = () => {
 								transition={{ duration: 0.5 }}
 							>
 								<div className={cn('flex-1 min-w-[250px]')}>
-									<Label htmlFor="adminKey">{t('adminKey')}</Label>
+									<Label htmlFor="adminKey">
+										{t('adminKey')}
+									</Label>
 									<Input
 										id="adminKey"
 										type="password"

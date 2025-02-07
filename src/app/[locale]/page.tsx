@@ -16,7 +16,7 @@ export default function HomePage() {
 			<Hero />
 			<AlternateHero />
 			<FAQ />
-			<AlternateFAQ  />
+			<AlternateFAQ />
 		</main>
 	);
 }

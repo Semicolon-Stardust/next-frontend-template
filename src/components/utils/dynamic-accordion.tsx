@@ -5,7 +5,6 @@ import {
 	AccordionContent,
 } from '@/components/ui/accordion';
 
-
 interface AccordionData {
 	id: string;
 	title: string;
