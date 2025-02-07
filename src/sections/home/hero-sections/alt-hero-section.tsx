@@ -21,31 +21,27 @@ export default function AlternateHero() {
 	}));
 
 	return (
-		<section className="flex min-h-screen items-center bg-gray-100 dark:bg-gray-900">
+		<section className="min-h-screen bg-gray-100 dark:bg-gray-950 flex items-center">
 			<Carousel
 				opts={{ align: 'start', loop: true }}
-				className="h-full w-full"
+				className="w-full"
 				plugins={[Autoplay({ delay: 5000 })]}
 			>
-				<CarouselContent className="h-full w-[90vw] md:w-full">
+				<CarouselContent className="w-full">
 					{carouselData.map((item, index) => (
 						<CarouselItem
 							key={index}
-							className="flex w-full flex-col-reverse items-center justify-between md:flex-row"
+							className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8"
 						>
 							<motion.div
 								initial={{ opacity: 0, x: -50 }}
 								whileInView={{ opacity: 1, x: 0 }}
 								transition={{ duration: 0.8 }}
 								viewport={{ once: true }}
-								className="flex w-full flex-col items-center justify-center text-black md:w-1/2 dark:text-white"
+								className="text-black dark:text-white"
 							>
-								<h1 className="mb-4 text-center text-4xl font-bold tracking-tight md:text-6xl">
-									{item.heading}
-								</h1>
-								<p className="mb-6 text-center text-xl font-medium tracking-wide md:text-3xl">
-									{item.paragraph}
-								</p>
+								<h1 className="text-4xl font-bold mb-4">{item.heading}</h1>
+								<p className="text-xl">{item.paragraph}</p>
 							</motion.div>
 
 							<motion.div
@@ -53,19 +49,9 @@ export default function AlternateHero() {
 								whileInView={{ opacity: 1, scale: 1 }}
 								transition={{ duration: 0.8 }}
 								viewport={{ once: true }}
-								className="relative h-96 w-full overflow-hidden rounded-2xl shadow-lg md:w-1/2"
+								className="relative h-96 overflow-hidden rounded-2xl shadow-lg"
 							>
-								<motion.div
-									initial={{ opacity: 0, scale: 0.8 }}
-									whileInView={{ opacity: 1, scale: 1 }}
-									transition={{ duration: 0.8 }}
-									className="h-full w-full"
-								>
-									<ImageWrapper
-										src={item.image}
-										alt={item.altText}
-									/>
-								</motion.div>
+								<ImageWrapper src={item.image} alt={item.altText} />
 							</motion.div>
 						</CarouselItem>
 					))}

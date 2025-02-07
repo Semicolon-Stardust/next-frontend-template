@@ -20,7 +20,7 @@ export default function AlternateFAQ({ reverse = false }: FAQProps) {
 	}));
 
 	return (
-		<section className="flex min-h-screen w-full items-center justify-center bg-gray-100 px-4 transition-colors duration-300 dark:bg-gray-900">
+		<section className="flex min-h-screen w-full items-center justify-center bg-gray-100 px-4 transition-colors duration-300 dark:bg-gray-950">
 			<motion.div
 				initial={{ opacity: 0, y: 30 }}
 				whileInView={{ opacity: 1, y: 0 }}

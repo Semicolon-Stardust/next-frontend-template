@@ -66,7 +66,7 @@ export default function NotFoundPage() {
 			</motion.h1>
 			<motion.p
 				className={cn(
-					'mb-8 text-center text-base text-gray-700 sm:text-lg dark:text-gray-300'
+					'mb-8 text-center text-base text-gray-950 sm:text-lg dark:text-gray-300'
 				)}
 				variants={itemVariants}
 			>
