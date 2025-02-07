@@ -64,9 +64,9 @@ export default function Header() {
 			animate={{ y: 0 }}
 			transition={{ duration: 0.5 }}
 			className={cn(
-				'fixed top-0 left-0 w-full z-50 select-none bg-white dark:bg-black',
+				'fixed top-0 left-0 z-50 w-full bg-white select-none dark:bg-black',
 				scrolled
-					? 'backdrop-blur-md border-b border-gray-200 dark:border-gray-700 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:shadow-[0_35px_60px_-15px_rgba(255,255,255,0.3)] transition-shadow duration-500'
+					? 'border-b border-gray-200 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] backdrop-blur-md transition-shadow duration-500 dark:border-gray-700 dark:shadow-[0_35px_60px_-15px_rgba(255,255,255,0.3)]'
 					: 'transition-shadow duration-500'
 			)}
 		>
@@ -92,14 +92,14 @@ function Navbar() {
 			initial={false}
 			animate={isOpen ? 'open' : 'closed'}
 			className={cn(
-				'flex flex-col md:flex-row justify-between items-center px-5 md:px-20 lg:px-40 py-1'
+				'flex flex-col items-center justify-between px-5 py-1 md:flex-row md:px-20 lg:px-40'
 			)}
 		>
 			<motion.div
 				initial="hidden"
 				animate="visible"
 				variants={itemVariants}
-				className="flex items-center justify-between w-full md:w-auto"
+				className="flex w-full items-center justify-between md:w-auto"
 			>
 				<Link href="/" className="flex items-center gap-1">
 					{/* Daya Logo */}
@@ -112,7 +112,7 @@ function Navbar() {
 					/>
 					<h1
 						className={cn(
-							'text-2xl lg:text-3xl font-bold text-black dark:text-white'
+							'text-2xl font-bold text-black lg:text-3xl dark:text-white'
 						)}
 					>
 						{t('logo')}
@@ -123,7 +123,7 @@ function Navbar() {
 					<Button
 						variant={'link'}
 						effect={'shine'}
-						className="text-lg font-[300] bg-black text-white dark:bg-white dark:text-black"
+						className="bg-black text-lg font-[300] text-white dark:bg-white dark:text-black"
 						onClick={() => setIsOpen(!isOpen)}
 					>
 						{isOpen ? <X size={30} /> : <Menu size={30} />}
@@ -144,7 +144,7 @@ function Navbar() {
 						},
 					},
 				}}
-				className="items-center hidden gap-5 md:flex"
+				className="hidden items-center gap-5 md:flex"
 			>
 				<Links links={linksData} />
 				<CTAButtons />
@@ -154,7 +154,7 @@ function Navbar() {
 				initial={false}
 				animate={isOpen ? 'open' : 'closed'}
 				variants={menuVariants}
-				className={cn('w-full flex flex-col md:hidden')}
+				className={cn('flex w-full flex-col md:hidden')}
 			>
 				<AnimatePresence>
 					{isOpen && <MobileLinks links={linksData} />}
@@ -219,7 +219,7 @@ function MobileLinks({ links }: MobileLinksProps) {
 			animate={'open'}
 			exit={'closed'}
 			variants={menuVariants}
-			className={cn('flex flex-col items-center gap-5 mt-10')}
+			className={cn('mt-10 flex flex-col items-center gap-5')}
 		>
 			<Links links={links} />
 			<CTAButtons />

@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import Instagram from '@/Assets/instagram-logo.svg';
-import Linkedin from '@/Assets/linkedin-logo.svg';
-import Github from '@/Assets/github-logo.svg';
-import Discord from '@/Assets/discord-logo.svg';
-import X from '@/Assets/x-logo.svg';
-import Notion from '@/Assets/notion-logo.svg';
+import Instagram from '@/assets/instagram-logo.svg';
+import Linkedin from '@/assets/linkedin-logo.svg';
+import Github from '@/assets/github-logo.svg';
+import Discord from '@/assets/discord-logo.svg';
+import X from '@/assets/x-logo.svg';
+import Notion from '@/assets/notion-logo.svg';
 import { useTranslations } from 'next-intl';
 import LocaleToggle from '@/components/utils/locale-toggle';
 
@@ -128,32 +128,35 @@ export default function Footer() {
 	return (
 		<footer
 			className={cn(
-				'py-8 px-4 md:px-10',
-				'backdrop-blur-md bg-white/30 dark:bg-gray-900/30',
+				'px-4 py-8 md:px-10',
+				'bg-white/30 backdrop-blur-md dark:bg-gray-900/30',
 				'border-t border-gray-200 dark:border-gray-700',
 				'shadow-[0_-35px_60px_-15px_rgba(0,0,0,0.1)] dark:shadow-[0_-35px_60px_-15px_rgba(255,255,255,0.1)]',
-				'grid grid-cols-1 md:grid-cols-4 gap-8 justify-center items-start'
+				'grid grid-cols-1 items-start justify-center gap-8 md:grid-cols-4'
 			)}
 		>
 			<div className="col-span-1 text-center md:col-span-4 md:text-left">
 				<Link href={footerData.logo.href}>
 					<h1
 						className={cn(
-							'text-4xl font-bold text-black dark:text-white'
+							'text-2xl font-bold text-black dark:text-white'
 						)}
 					>
 						{footerData.logo.name}
 					</h1>
 				</Link>
-				<p className="mt-2 text-gray-700 dark:text-gray-300">
+				<p className="mx-6 mt-2 text-gray-700 md:mx-0 dark:text-gray-300">
 					{footerData.p.text}
 				</p>
 			</div>
 			{footerData.sections.map((section, index) => (
-				<div key={index} className="col-span-1">
+				<div
+					key={index}
+					className="col-span-1 flex flex-col items-center text-center md:items-start md:text-left"
+				>
 					<h2
 						className={cn(
-							'text-xl font-bold text-black dark:text-white font-mono'
+							'font-mono text-xl font-bold text-black dark:text-white'
 						)}
 					>
 						{section.title}
@@ -180,26 +183,30 @@ export default function Footer() {
 					</ul>
 				</div>
 			))}
+
 			<div>
 				<h2
 					className={cn(
-						'text-xl font-bold text-black dark:text-white font-mono'
+						'flex flex-col items-center text-center font-mono text-xl font-bold text-black md:items-start md:text-left dark:text-white'
 					)}
 				>
 					{t('socials.title')}
 				</h2>
 				<div
-					className={cn('bg-black dark:bg-white', 'h-0.5', 'w-10')}
+					className={cn(
+						'mx-auto h-0.5 w-10 bg-black md:mx-0 dark:bg-white'
+					)}
 				></div>
+
 				<ul
 					className={cn(
-						'grid grid-cols-3 gap-4 mt-4 md:grid-cols-3 justify-center items-center'
+						'mt-4 grid grid-cols-3 items-center justify-center gap-4 md:grid-cols-3'
 					)}
 				>
 					{footerData.socials.map((social, index) => (
 						<li
 							key={index}
-							className="flex flex-row items-center col-span-1 gap-3 md:flex-col"
+							className="col-span-1 flex flex-col items-center justify-center gap-3"
 						>
 							<Link
 								href={social.href}
@@ -208,27 +215,27 @@ export default function Footer() {
 							>
 								<Button
 									className={cn(
-										'rounded-full p-2 h-10 w-10 md:h-12 md:w-12',
+										'flex h-10 w-10 items-center justify-center rounded-full p-2 md:h-12 md:w-12',
 										social.color,
 										social.textColor
 									)}
 									variant="link"
 									effect="ringHover"
 								>
-									<social.icons className="w-6 h-6 md:h-8 md:w-8" />
+									<social.icons className="h-6 w-6 md:h-8 md:w-8" />
 								</Button>
 							</Link>
-							<span className="flex text-sm md:hidden">
+							<span className="text-center text-sm md:hidden">
 								{social.name}
 							</span>
 						</li>
 					))}
 				</ul>
 			</div>
-			<div className="flex flex-col items-center justify-center col-span-1 pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700 md:col-span-4 md:flex-row md:justify-between md:space-y-0">
+			<div className="col-span-1 mt-4 flex flex-col items-center justify-center space-y-2 border-t border-gray-200 pt-4 md:col-span-4 md:flex-row md:justify-between md:space-y-0 dark:border-gray-700">
 				<p
 					className={cn(
-						'text-center md:text-left text-gray-500 dark:text-gray-400'
+						'text-center text-gray-500 md:text-left dark:text-gray-400'
 					)}
 				>
 					&copy; {new Date().getFullYear()} {footerData.logo.name}.
@@ -236,7 +243,7 @@ export default function Footer() {
 				</p>
 				<p
 					className={cn(
-						'text-center md:text-right text-gray-500 dark:text-gray-400'
+						'text-center text-gray-500 md:text-right dark:text-gray-400'
 					)}
 				>
 					{t('designedAndDevelopedBy')}{' '}
