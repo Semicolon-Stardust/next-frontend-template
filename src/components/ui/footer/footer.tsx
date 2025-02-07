@@ -129,7 +129,7 @@ export default function Footer() {
 		<footer
 			className={cn(
 				'px-4 py-8 md:px-10',
-				'bg-white/30 backdrop-blur-md dark:bg-gray-900/30',
+				'bg-white/30 backdrop-blur-md dark:bg-gray-950',
 				'border-t border-gray-200 dark:border-gray-700',
 				'shadow-[0_-35px_60px_-15px_rgba(0,0,0,0.1)] dark:shadow-[0_-35px_60px_-15px_rgba(255,255,255,0.1)]',
 				'grid grid-cols-1 items-start justify-center gap-8 md:grid-cols-4'
@@ -139,13 +139,13 @@ export default function Footer() {
 				<Link href={footerData.logo.href}>
 					<h1
 						className={cn(
-							'text-2xl font-bold text-black dark:text-white'
+							'text-2xl font-bold text-gray-950 dark:text-white'
 						)}
 					>
 						{footerData.logo.name}
 					</h1>
 				</Link>
-				<p className="mx-6 mt-2 text-gray-700 md:mx-0 dark:text-gray-300">
+				<p className="mx-6 mt-2 text-gray-950 md:mx-0 dark:text-gray-300">
 					{footerData.p.text}
 				</p>
 			</div>

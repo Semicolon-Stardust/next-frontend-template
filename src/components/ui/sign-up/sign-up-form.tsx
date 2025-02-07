@@ -169,11 +169,13 @@ const SignUpForm = () => {
 								transition={{ duration: 0.5 }}
 							>
 								<div className={cn('min-w-[250px] flex-1')}>
-									<Label htmlFor="adminKey">Admin Key</Label>
+									<Label htmlFor="adminKey">
+										{t('adminKey')}
+									</Label>
 									<Input
 										id="adminKey"
 										type="password"
-										placeholder="Enter Admin Key"
+										placeholder={t('adminKey')}
 										{...userForm.register('adminKey')}
 										className="w-full"
 									/>

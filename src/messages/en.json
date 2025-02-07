@@ -14,15 +14,10 @@
 			"services": "Services",
 			"contact": "Contact"
 		},
-		"ctaButtons": {
-			"login": {
-				"text": "Log In",
-				"link": "/login"
-			},
-			"sign-up": {
-				"text": "Sign Up",
-				"link": "/sign-up"
-			}
+		"modeToggle": {
+			"light": "Light",
+			"dark": "Dark",
+			"system": "System"
 		}
 	},
 	"HomePage": {
@@ -79,7 +74,30 @@
 		"isAdmin": "Is Admin?",
 		"signUpButton": "Sign Up",
 		"alreadyHaveAccount": "Already have an account?",
-		"logIn": "Log In"
+		"logIn": "Log In",
+		"adminKey": "Admin Key"
+	},
+	"FrequentlyAskedQuestions": {
+		"title": "Frequently Asked Questions",
+		"description": "Find answers to the most commonly asked questions about our platform.",
+		"questions": {
+			"1": {
+				"question": "What is the purpose of this platform?",
+				"answer": "The purpose of this platform is to provide a template for building web applications and websites with a modern frontend stack and best practices."
+			},
+			"2": {
+				"question": "What technologies are used in this template?",
+				"answer": "This template uses Next.js, TypeScript, and Tailwind CSS for the frontend, and Jest and React Testing Library for testing."
+			},
+			"3": {
+				"question": "How can I contribute to this project?",
+				"answer": "You can contribute to this project by forking the repository on GitHub, making your changes, and submitting a pull request."
+			},
+			"4": {
+				"question": "Is this template free to use?",
+				"answer": "Yes, this template is free to use for personal and commercial projects. However, attribution is appreciated."
+			}
+		}
 	},
 	"Footer": {
 		"logo": "Nextjs Frontend Template",
