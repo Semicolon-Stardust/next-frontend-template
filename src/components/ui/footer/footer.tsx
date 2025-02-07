@@ -145,7 +145,7 @@ export default function Footer() {
 						{footerData.logo.name}
 					</h1>
 				</Link>
-				<p className="mx-6 mt-2 text-gray-700 dark:text-gray-300 md:mx-0">
+				<p className="mx-6 mt-2 text-gray-700 md:mx-0 dark:text-gray-300">
 					{footerData.p.text}
 				</p>
 			</div>
@@ -187,14 +187,14 @@ export default function Footer() {
 			<div>
 				<h2
 					className={cn(
-						'flex flex-col items-center text-center font-mono text-xl font-bold text-black dark:text-white md:items-start md:text-left'
+						'flex flex-col items-center text-center font-mono text-xl font-bold text-black md:items-start md:text-left dark:text-white'
 					)}
 				>
 					{t('socials.title')}
 				</h2>
 				<div
 					className={cn(
-						'mx-auto h-0.5 w-10 bg-black dark:bg-white md:mx-0'
+						'mx-auto h-0.5 w-10 bg-black md:mx-0 dark:bg-white'
 					)}
 				></div>
 
@@ -232,10 +232,10 @@ export default function Footer() {
 					))}
 				</ul>
 			</div>
-			<div className="col-span-1 mt-4 flex flex-col items-center justify-center space-y-2 border-t border-gray-200 pt-4 dark:border-gray-700 md:col-span-4 md:flex-row md:justify-between md:space-y-0">
+			<div className="col-span-1 mt-4 flex flex-col items-center justify-center space-y-2 border-t border-gray-200 pt-4 md:col-span-4 md:flex-row md:justify-between md:space-y-0 dark:border-gray-700">
 				<p
 					className={cn(
-						'text-center text-gray-500 dark:text-gray-400 md:text-left'
+						'text-center text-gray-500 md:text-left dark:text-gray-400'
 					)}
 				>
 					&copy; {new Date().getFullYear()} {footerData.logo.name}.
@@ -243,7 +243,7 @@ export default function Footer() {
 				</p>
 				<p
 					className={cn(
-						'text-center text-gray-500 dark:text-gray-400 md:text-right'
+						'text-center text-gray-500 md:text-right dark:text-gray-400'
 					)}
 				>
 					{t('designedAndDevelopedBy')}{' '}

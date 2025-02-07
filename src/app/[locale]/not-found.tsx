@@ -34,7 +34,7 @@ export default function NotFoundPage() {
 	return (
 		<motion.div
 			className={cn(
-				'flex min-h-screen flex-col items-center justify-center bg-gray-100/30 p-4 dark:bg-gray-900/30 sm:p-8'
+				'flex min-h-screen flex-col items-center justify-center bg-gray-100/30 p-4 sm:p-8 dark:bg-gray-900/30'
 			)}
 			variants={containerVariants}
 			initial="hidden"
@@ -47,7 +47,7 @@ export default function NotFoundPage() {
 					viewBox="0 0 24 24"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					className="sm:w-200 sm:h-200"
+					className="sm:h-200 sm:w-200"
 				>
 					<path
 						d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"
@@ -58,7 +58,7 @@ export default function NotFoundPage() {
 			</motion.div>
 			<motion.h1
 				className={cn(
-					'mb-4 text-center text-4xl font-bold text-black dark:text-white sm:text-6xl'
+					'mb-4 text-center text-4xl font-bold text-black sm:text-6xl dark:text-white'
 				)}
 				variants={itemVariants}
 			>
@@ -66,7 +66,7 @@ export default function NotFoundPage() {
 			</motion.h1>
 			<motion.p
 				className={cn(
-					'mb-8 text-center text-base text-gray-700 dark:text-gray-300 sm:text-lg'
+					'mb-8 text-center text-base text-gray-700 sm:text-lg dark:text-gray-300'
 				)}
 				variants={itemVariants}
 			>
@@ -74,7 +74,7 @@ export default function NotFoundPage() {
 			</motion.p>
 			<motion.div
 				className={cn(
-					'flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0'
+					'flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4'
 				)}
 				variants={itemVariants}
 			>

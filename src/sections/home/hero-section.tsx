@@ -29,7 +29,7 @@ export default function Hero() {
 			<Carousel
 				opts={{ align: 'start', loop: true }}
 				className="h-full w-full"
-				plugins={[Autoplay({ delay: 2000 })]}
+				plugins={[Autoplay({ delay: 5000 })]}
 				setApi={setApi}
 			>
 				<CarouselContent className="h-full">
@@ -46,8 +46,8 @@ export default function Hero() {
 								priority
 								loading="eager"
 							/>
-							<div className="bg-[hsla(0, 0, 0, 0.5)] absolute inset-0 z-10 min-h-screen w-full"></div>
-							<div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center px-5 text-white md:ml-12 md:items-start">
+							<div className="absolute inset-0 z-10 min-h-screen w-full bg-black/40"></div>
+							<div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center px-5 text-center text-white">
 								<h1 className="mb-2 text-4xl font-bold tracking-tight drop-shadow-lg md:text-left md:text-6xl">
 									{item.heading}
 								</h1>

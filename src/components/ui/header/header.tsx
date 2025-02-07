@@ -64,7 +64,7 @@ export default function Header() {
 			animate={{ y: 0 }}
 			transition={{ duration: 0.5 }}
 			className={cn(
-				'fixed left-0 top-0 z-50 w-full select-none bg-white dark:bg-black',
+				'fixed top-0 left-0 z-50 w-full bg-white select-none dark:bg-black',
 				scrolled
 					? 'border-b border-gray-200 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] backdrop-blur-md transition-shadow duration-500 dark:border-gray-700 dark:shadow-[0_35px_60px_-15px_rgba(255,255,255,0.3)]'
 					: 'transition-shadow duration-500'
@@ -112,7 +112,7 @@ function Navbar() {
 					/>
 					<h1
 						className={cn(
-							'text-2xl font-bold text-black dark:text-white lg:text-3xl'
+							'text-2xl font-bold text-black lg:text-3xl dark:text-white'
 						)}
 					>
 						{t('logo')}

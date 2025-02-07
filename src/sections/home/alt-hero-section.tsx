@@ -25,24 +25,24 @@ export default function AlternateHero() {
 	const [api, setApi] = useState<CarouselApi>();
 
 	return (
-		<section className="flex h-[100vh] w-full select-none items-center">
+		<section className="flex h-[100vh] w-full items-center select-none">
 			<Carousel
 				opts={{ align: 'start', loop: true }}
 				className="flex h-full w-full items-center justify-between"
-				plugins={[Autoplay({ delay: 2000 })]}
+				plugins={[Autoplay({ delay: 5000 })]}
 				setApi={setApi}
 			>
 				<CarouselContent className="h-full w-full">
 					{carouselData.map((item, index) => (
 						<CarouselItem
 							key={index}
-							className="grid h-full w-full grid-cols-2 sm:grid-cols-1"
+							className="grid h-full w-full grid-cols-2"
 						>
 							<div className="flex h-full w-1/2 flex-col items-center justify-center text-black dark:text-white">
-								<h1 className="mb-2 text-left text-4xl font-bold tracking-tight md:text-6xl">
+								<h1 className="mb-2 text-center text-2xl font-bold tracking-tight md:text-left md:text-4xl">
 									{item.heading}
 								</h1>
-								<p className="text-md mb-4 pt-5 text-left font-medium tracking-wide md:text-2xl">
+								<p className="text-md mb-4 pt-5 text-center font-medium tracking-wide md:text-left md:text-2xl">
 									{item.paragraph}
 								</p>
 							</div>
@@ -60,7 +60,6 @@ export default function AlternateHero() {
 									}}
 									priority
 									loading="eager"
-									className="rounded-lg"
 								/>
 							</div>
 						</CarouselItem>
