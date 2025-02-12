@@ -1,8 +1,8 @@
 import { cn } from '@/lib/utils';
-import AlternateHero from '@/sections/home/hero-sections/alt-hero-section';
-import FAQ from '@/sections/home/frequently-asked-questions/frequently-asked-questions';
-import Hero from '@/sections/home/hero-sections/hero-section';
-import AlternateFAQ from '@/sections/home/frequently-asked-questions/alt-frequently-asked-questions';
+import AlternateHero from '@/sections/hero-sections/alt-hero-section';
+import FAQ from '@/sections/frequently-asked-questions/frequently-asked-questions';
+import Hero from '@/sections/hero-sections/hero-section';
+import AlternateFAQ from '@/sections/frequently-asked-questions/alt-frequently-asked-questions';
 
 export default function HomePage() {
 	return (

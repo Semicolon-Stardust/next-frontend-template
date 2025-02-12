@@ -47,7 +47,7 @@ export default function Hero() {
 								loading="eager"
 							/>
 							<div className="absolute inset-0 z-10 min-h-screen w-full bg-black/40"></div>
-							<div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center px-5 text-center text-white z-20">
+							<div className="absolute inset-0 z-20 flex h-full w-full flex-col items-center justify-center px-5 text-center text-white">
 								<h1 className="mb-2 text-4xl font-bold tracking-tight drop-shadow-lg md:text-left md:text-6xl">
 									{item.heading}
 								</h1>
