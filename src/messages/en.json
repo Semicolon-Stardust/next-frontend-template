@@ -42,7 +42,10 @@
 					"heading": "Join Us Today",
 					"paragraph": "This is a sample description for Slide 3."
 				}
-			}
+			},
+			"title": "Component Library",
+			"description": "Reusable, accessible, and beautifully designed components for your projects.",
+			"cta": "Explore Components"
 		}
 	},
 	"AboutPage": {

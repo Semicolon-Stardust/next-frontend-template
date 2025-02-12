@@ -35,7 +35,7 @@ export default function AlternateFAQ({ reverse = false }: FAQProps) {
 					<ImageWrapper
 						src="https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?q=80&w=2873&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						alt="FAQs"
-						className="rounded-2xl transition-transform duration-500 hover:scale-105 object-cover"
+						className="rounded-2xl object-cover transition-transform duration-500 hover:scale-105"
 					/>
 				</div>
 
