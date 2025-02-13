@@ -35,7 +35,7 @@ export default function ButtonsDemoPage() {
 	const t = useTranslations('ButtonsDemo');
 
 	return (
-		<section className="mx-auto mt-10 w-full min-h-screen max-w-6xl px-6 py-16 sm:px-12">
+		<section className="mx-auto mt-10 min-h-screen w-full max-w-6xl px-6 py-16 sm:px-12">
 			<h2 className="text-center text-3xl font-bold text-black sm:text-4xl dark:text-white">
 				{t('title')}
 			</h2>

@@ -46,7 +46,11 @@ export default function NavigationCardsSection() {
 			{/* Grid of Clickable Component Sections */}
 			<div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				{sections.map((section) => (
-					<Link key={section.id} href={section.href} className="group block">
+					<Link
+						key={section.id}
+						href={section.href}
+						className="group block"
+					>
 						<div className="relative overflow-hidden rounded-xl border bg-gray-100 p-6 shadow-md transition hover:scale-105 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800">
 							{/* Label on Top Left */}
 							<div className="absolute top-2 left-2 rounded bg-black px-3 py-1 text-xs font-semibold text-white dark:bg-white dark:text-black">
