@@ -1,8 +1,6 @@
 import { cn } from '@/lib/utils';
-import AlternateHero from '@/sections/home/hero-sections/alt-hero-section';
-import FAQ from '@/sections/home/frequently-asked-questions/frequently-asked-questions';
-import Hero from '@/sections/home/hero-sections/hero-section';
-import AlternateFAQ from '@/sections/home/frequently-asked-questions/alt-frequently-asked-questions';
+import HeroSection from '@/sections/home/hero-section';
+import NavigationCardsSection from '@/sections/home/navigation-cards-section';
 
 export default function HomePage() {
 	return (
@@ -13,10 +11,8 @@ export default function HomePage() {
 				'text-black dark:text-white'
 			)}
 		>
-			<Hero />
-			<AlternateHero />
-			<FAQ />
-			<AlternateFAQ />
+			<HeroSection />
+			<NavigationCardsSection />
 		</main>
 	);
 }

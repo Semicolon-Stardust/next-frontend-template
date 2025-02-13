@@ -21,7 +21,7 @@ export default function AlternateHero() {
 	}));
 
 	return (
-		<section className="min-h-screen bg-gray-100 dark:bg-gray-950 flex items-center">
+		<section className="flex min-h-screen items-center bg-gray-100 dark:bg-gray-950">
 			<Carousel
 				opts={{ align: 'start', loop: true }}
 				className="w-full"
@@ -31,7 +31,7 @@ export default function AlternateHero() {
 					{carouselData.map((item, index) => (
 						<CarouselItem
 							key={index}
-							className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8"
+							className="grid grid-cols-1 items-center gap-8 p-8 md:grid-cols-2"
 						>
 							<motion.div
 								initial={{ opacity: 0, x: -50 }}
@@ -40,7 +40,9 @@ export default function AlternateHero() {
 								viewport={{ once: true }}
 								className="text-black dark:text-white"
 							>
-								<h1 className="text-4xl font-bold mb-4">{item.heading}</h1>
+								<h1 className="mb-4 text-4xl font-bold">
+									{item.heading}
+								</h1>
 								<p className="text-xl">{item.paragraph}</p>
 							</motion.div>
 
@@ -51,7 +53,10 @@ export default function AlternateHero() {
 								viewport={{ once: true }}
 								className="relative h-96 overflow-hidden rounded-2xl shadow-lg"
 							>
-								<ImageWrapper src={item.image} alt={item.altText} />
+								<ImageWrapper
+									src={item.image}
+									alt={item.altText}
+								/>
 							</motion.div>
 						</CarouselItem>
 					))}

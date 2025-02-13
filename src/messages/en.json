@@ -42,7 +42,71 @@
 					"heading": "Join Us Today",
 					"paragraph": "This is a sample description for Slide 3."
 				}
+			},
+			"title": "Component Catalogue",
+			"description": "Beautifully designed components suitable for your suite of websites.",
+			"cta": "Explore Sections"
+		},
+		"navigation": {
+			"title": "Browse Our Component Catalogue",
+			"description": "Choose a component and send us the details via WhatsApp, Mail, or Jira.",
+			"howToSend": {
+				"title": "How to Send Your Selection",
+				"description": "Once you’ve selected a component, send us the component label along with the required data via WhatsApp, Mail, or Jira."
+			},
+			"sections": {
+				"buttons": {
+					"title": "Buttons",
+					"description": "Pre-designed buttons with multiple variants.",
+					"href": "/buttons"
+				},
+				"heroSections": {
+					"title": "Hero Sections",
+					"description": "Pre-styled hero sections with dynamic layouts.",
+					"href": "/hero-sections"
+				},
+				"imageSections": {
+					"title": "Image Sections",
+					"description": "Layouts focusing on images and visual storytelling.",
+					"href": "/image-sections"
+				},
+				"miscSections": {
+					"title": "Misc Sections",
+					"description": "Accordions, CTA sections, and other reusable elements.",
+					"href": "/misc-sections"
+				}
 			}
+		}
+	},
+	"ButtonsDemo": {
+		"title": "Button Variants & Effects",
+		"description": "Explore different button styles, effects, and sizes available in our component library.",
+		"variants": {
+			"title": "Button Variants",
+			"default": "Default",
+			"destructive": "Destructive",
+			"outline": "Outline",
+			"secondary": "Secondary",
+			"ghost": "Ghost",
+			"link": "Link"
+		},
+		"effects": {
+			"title": "Button Effects",
+			"expandIcon": "Expand Icon",
+			"ringHover": "Ring Hover",
+			"shine": "Shine",
+			"shineHover": "Shine Hover",
+			"gooeyRight": "Gooey Right",
+			"gooeyLeft": "Gooey Left",
+			"underline": "Underline",
+			"hoverUnderline": "Hover Underline"
+		},
+		"sizes": {
+			"title": "Button Sizes",
+			"default": "Default",
+			"sm": "Small",
+			"lg": "Large",
+			"icon": "Icon"
 		}
 	},
 	"AboutPage": {
