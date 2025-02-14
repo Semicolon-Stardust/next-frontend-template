@@ -18,7 +18,7 @@ export default function HeroSection() {
 					{t('description')}
 				</p>
 				<Button className="mt-6 px-6 py-3 text-lg">
-					<Link href="/components">{t('cta')}</Link>
+					<Link href="#nav-cards">{t('cta')}</Link>
 				</Button>
 			</div>
 			<BackgroundBeams />
