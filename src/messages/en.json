@@ -92,7 +92,8 @@
 		"title": "Hero Sections",
 		"sections": {
 			"defaultHero": "Default Hero",
-			"alternateHero": "Alternate Hero"
+			"alternateHero": "Alternate Hero",
+			"typewriterHero": "Typewriter Effect Hero"
 		},
 		"carousel": {
 			"1": {
@@ -113,6 +114,16 @@
 				"heading": "Join Us Today",
 				"paragraph": "This is a sample description for Slide 3."
 			}
+		},
+		"typewriterHero": {
+			"title": "Experience the Power of Dynamic Text",
+			"description": "Engage your users with interactive and eye-catching typewriter animations.",
+			"cta": "Get Started",
+			"texts": [
+				"Beautifully",
+				"animated",
+				"& engaging"
+			]
 		}
 	},
 	"AboutPage": {
