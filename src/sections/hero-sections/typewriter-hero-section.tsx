@@ -11,16 +11,16 @@ export default function TypewriterHero() {
 	const words = [
 		{ text: t('texts.0') },
 		{ text: t('texts.1') },
-		{ text: t('texts.2') }
+		{ text: t('texts.2') },
 	];
 
 	return (
-		<div className="flex h-screen w-full flex-col items-center justify-center text-center bg-black px-6 sm:px-12">
+		<div className="flex h-screen w-full flex-col items-center justify-center bg-black px-6 text-center sm:px-12">
 			<motion.h1
 				initial={{ opacity: 0, y: -20 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.8, ease: 'easeInOut' }}
-				className="text-3xl py-4 font-bold text-white sm:text-5xl md:text-5xl"
+				className="py-4 text-3xl font-bold text-white sm:text-5xl md:text-5xl"
 			>
 				{t('title')}
 			</motion.h1>
@@ -34,7 +34,7 @@ export default function TypewriterHero() {
 				initial={{ opacity: 0, y: 20 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.8, delay: 0.2, ease: 'easeInOut' }}
-				className="mt-4 text-base text-gray-400 sm:text-lg md:text-xl lg:text-2xl max-w-2xl"
+				className="mt-4 max-w-2xl text-base text-gray-400 sm:text-lg md:text-xl lg:text-2xl"
 			>
 				{t('description')}
 			</motion.p>
@@ -43,7 +43,7 @@ export default function TypewriterHero() {
 				initial={{ opacity: 0, scale: 0.8 }}
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.8, delay: 0.4, ease: 'easeInOut' }}
-				className="mt-6 rounded-full bg-white px-6 py-2 text-black text-sm sm:text-base md:text-lg transition hover:bg-gray-300"
+				className="mt-6 rounded-full bg-white px-6 py-2 text-sm text-black transition hover:bg-gray-300 sm:text-base md:text-lg"
 			>
 				{t('cta')}
 			</motion.button>

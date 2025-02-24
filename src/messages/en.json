@@ -119,11 +119,15 @@
 			"title": "Experience the Power of Dynamic Text",
 			"description": "Engage your users with interactive and eye-catching typewriter animations.",
 			"cta": "Get Started",
-			"texts": [
-				"Beautifully",
-				"animated",
-				"& engaging"
-			]
+			"texts": ["Beautifully", "animated", "& engaging"]
+		}
+	},
+	"ImageSections": {
+		"dummy": {
+			"image": "https://images.unsplash.com/photo-1485134532658-d720895a3b5e",
+			"heading": "Stunning Visuals for Your Projects",
+			"subtitle": "Enhancing user experience through elegant design",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
 		}
 	},
 	"AboutPage": {
