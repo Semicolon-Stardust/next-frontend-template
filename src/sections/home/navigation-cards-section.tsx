@@ -35,7 +35,10 @@ export default function NavigationCardsSection() {
 	];
 
 	return (
-		<section className="mx-auto w-full max-w-6xl px-6 py-16 sm:px-12">
+		<section
+			id="nav-cards"
+			className="mx-auto mt-16 w-full max-w-6xl px-6 py-16 sm:px-12"
+		>
 			<h2 className="text-center text-3xl font-bold text-black sm:text-4xl dark:text-white">
 				{t('title')}
 			</h2>

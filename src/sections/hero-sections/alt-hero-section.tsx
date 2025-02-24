@@ -11,7 +11,7 @@ import {
 import ImageWrapper from '@/components/utils/image-wrapper';
 
 export default function AlternateHero() {
-	const t = useTranslations('HomePage.heroSection.carousel');
+	const t = useTranslations('HeroSectionsPage.carousel');
 	const slideKeys = ['1', '2', '3'];
 	const carouselData = slideKeys.map((key) => ({
 		image: t(`${key}.image`),

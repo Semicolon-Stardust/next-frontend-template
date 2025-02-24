@@ -14,7 +14,7 @@ import { CarouselDots } from '@/components/ui/carousel-dots';
 import { type CarouselApi } from '@/components/ui/carousel';
 
 export default function Hero() {
-	const t = useTranslations('HomePage.heroSection.carousel');
+	const t = useTranslations('HeroSectionsPage.carousel');
 	const slideKeys = ['1', '2', '3'];
 	const carouselData = slideKeys.map((key) => ({
 		image: t(`${key}.image`),
@@ -46,7 +46,7 @@ export default function Hero() {
 								priority
 								loading="eager"
 							/>
-							<div className="absolute inset-0 z-10 min-h-screen w-full bg-black/40"></div>
+							<div className="absolute inset-0 z-0 min-h-screen w-full bg-black/40"></div>
 							<div className="absolute inset-0 z-20 flex h-full w-full flex-col items-center justify-center px-5 text-center text-white">
 								<h1 className="mb-2 text-4xl font-bold tracking-tight drop-shadow-lg md:text-left md:text-6xl">
 									{item.heading}
