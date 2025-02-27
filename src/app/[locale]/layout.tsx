@@ -27,6 +27,9 @@ export const metadata: Metadata = {
 	title: 'Nextjs Frontend Template',
 	description:
 		'This is a Nextjs frontend template with TypeScript and Tailwind CSS for rapid development of web applications and websites with a modern frontend stack and best practices.',
+	other: {
+		'apple-mobile-web-app-title': 'DAYA - Component Catalogue',
+	},
 };
 
 export default async function LocaleLayout({
@@ -48,6 +51,12 @@ export default async function LocaleLayout({
 
 	return (
 		<html lang={locale} suppressHydrationWarning>
+			<head>
+				<meta
+					name="apple-mobile-web-app-title"
+					content="DAYA - Component Catalogue"
+				/>
+			</head>
 			<body
 				suppressHydrationWarning
 				className={cn(
